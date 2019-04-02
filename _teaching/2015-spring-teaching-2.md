@@ -1,7 +1,7 @@
 ---
 title: "The foundation of applied machine learning"
 collection: teaching
-type: "Online/in-Person courses"
+type: "Online/in-Person Graduate course"
 permalink: /teaching/2019-spring-foundation-machine-learning
 venue: "University of California, Riverside, Department of Physics and Astronomy"
 date: 2019-03-03
