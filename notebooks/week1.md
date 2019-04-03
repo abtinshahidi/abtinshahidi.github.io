@@ -1,20 +1,10 @@
----
-title: "Week 1"
-collection: teaching
-type: "Online/in-Person Graduate course"
-permalink: /teaching/2019-spring-foundation-machine-learning/week1
-venue: "University of California, Riverside, Department of Physics and Astronomy"
-date: 2019-03-03
-location: "Riverside, USA"
----
-
 
 ### ====================================================
-**The Foundation of Applied Machine Learning**
-=========
+# **The Foundation of Applied Machine Learning**
 
-Spring 2019
----------
+
+## Spring 2019
+
 ### ===================================================
 ### Instructor: [**Prof. Bahram Mobasher**](http://faculty.ucr.edu/~mobasher/)
 ### Teaching Assistance: [**Abtin Shahidi**](https://abtinshahidi.github.io/) email *abtin.shahidi--at--email.ucr.edu*
@@ -28,15 +18,14 @@ Spring 2019
 ## A very general introduction to python 3
 ### =============================================================================
 
-### Python is an interpreted, generel-purpose, and high-level programming language.
-* The python code is automatically compiled to a byte code and then excecuted; which make it perfect for using it as scripting language. On the other hand languages such as C need to be compiled on the machine first then can be excecuted. (which make the program in C to be very fast)
+### Python is an interpreted, generel-purpose, and high-level programming language. 
+* The python code is automatically compiled to a byte code and then excecuted; which make it perfect for using it as scripting language. On the other hand languages such as C need to be compiled on the machine first then can be excecuted. (which make the program in C to be very fast) 
 * The python has built-in high level data structures: list, string, dictionary, tuple, ...
 * Very large community which makes the debugging much easier as well as having access to a comprehensive standard library.
 * Python supports multiple programming paradigms, including object-oriented, imperative, functional and procedural.
 
 
-Installing Python on your machine:
--------
+## Installing Python on your machine:
 
 ### Creating Virtual enviroment: (*optional but highly recommended*)
 * It is a better practice to install python in a virtual environment to avoid any future dependency errors. For intalling virtual enviroment you can use any of the following methods:
@@ -44,7 +33,7 @@ Installing Python on your machine:
    2. [venv](https://docs.python.org/3/library/venv.html)
    3. installing [conda](https://docs.conda.io/projects/conda/en/latest/index.html) (Package, dependency and environment management for any language) and using it's [environment manager](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
    4. The most straight forward and easy to use way is to use [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/index.html); it put all your packages in the same place, which makes it much easier to find and manage them after making tons of projects or virtual environment.
-
+   
 
 ## Let's install virtualenvwrapper: (python 3)
 ### 1. Install [**pip**](https://pip.pypa.io/en/stable/installing/):
@@ -76,7 +65,7 @@ sudo dnf install python3-pip.
 ### 2.  Install [**virtualenv**](https://pypi.org/project/virtualenv/)
 
 ```shell
-sudo pip3 install virtualenv
+sudo pip3 install virtualenv 
 
 ```
 
@@ -118,10 +107,10 @@ mkvirtual ML
 
 workon ML
 
-pip3 install numpy matplotlib
+pip3 install numpy matplotlib 
 ```
 
-### One of the easiest ways to develop python codes (interactive feature) is to use [jupyter](https://jupyter.org/) notebook and [jupyter lab](https://github.com/jupyterlab/jupyterlab). They can be intalled with pip3 install.
+### One of the easiest ways to develop python codes (interactive feature) is to use [jupyter](https://jupyter.org/) notebook and [jupyter lab](https://github.com/jupyterlab/jupyterlab). They can be intalled with pip3 install. 
 
 ### ========================================================================
 ### Now you can check your installed packages by:
@@ -138,8 +127,8 @@ pip3 freeze > requirement.txt
 
 ### ===================================================
 
-**Python as a simple calculator!!**
-======
+# **Python as a simple calculator!!** 
+
 ### ===================================================
 
 It is very easy to define variables and do various calculation with them:
@@ -243,13 +232,11 @@ x+y
 
 
 ### ===================================================
-
-**Control Flow Tools**
-=======
+# **Control Flow Tools**
 ### ===================================================
 
 
-## 1.**while** statement
+## 1.**while** statement 
 
 
 
@@ -259,7 +246,7 @@ y=1
 
 while y<x:
     y+=1
-
+    
 print(y,x)
 ```
 
@@ -282,7 +269,7 @@ elif x!=3:
     y+=2
 else:
     y+=10
-
+    
 print(y,x)
 ```
 
@@ -323,13 +310,13 @@ for i in list_1:
 
 
 ### ===================================================
-**Built-in data structures**
-=======
+# **Built-in data structures**
+
 ### ===================================================
 
 ## **1. Strings**
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is relatively easy to work with strings in python
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is relatively easy to work with strings in python 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:Green">**Defenition**</span>:
 
@@ -503,7 +490,7 @@ my_list_1[3:]
 
     <ipython-input-41-0a94c0c5a776> in <module>
     ----> 1 3.2*my_list_1
-
+    
 
     TypeError: can't multiply sequence by non-int of type 'float'
 
@@ -520,7 +507,7 @@ my_list_1[3:]
 
     <ipython-input-42-7c4df6de0708> in <module>
     ----> 1 3.*my_list_1
-
+    
 
     TypeError: can't multiply sequence by non-int of type 'float'
 
@@ -551,11 +538,11 @@ my_list_1+my_list_1+my_list_1
 
 
 
-### **Common ways to create a list**
+### **Common ways to create a list** 
 
 
 ```python
-# 1
+# 1 
 my_list_1=[12,31,4]
 
 # 2
@@ -669,7 +656,7 @@ my_dictionary["hell"]
 
     <ipython-input-63-f26ba78a1716> in <module>
     ----> 1 my_dictionary["hell"]
-
+    
 
     KeyError: 'hell'
 
@@ -723,7 +710,7 @@ for key in my_dictionary.keys():
     1
     why
     14.0
-
+     
     [12, 41, 5]
 
 
@@ -738,7 +725,7 @@ for key in my_dictionary:
     1
     why
     14.0
-
+     
     [12, 41, 5]
 
 
@@ -773,8 +760,8 @@ dict_2["first_dict"]['x']
 
 
 ### ===================================================
-**Importing packages and modules**
-=======
+# **Importing packages and modules**
+
 ### ===================================================
 
 
@@ -844,8 +831,10 @@ linspace(1,10,20)
 
 ### ===================================================
 
-Some Useful packages and modules:
-======
+# Some Useful packages and modules:
+
+### ===================================================
+
 
 ## 1. **Numpy** look at the full [Documentation](https://docs.scipy.org/doc/numpy/reference/)
 
@@ -864,7 +853,7 @@ import numpy as np
 ```python
 my_list=[1,4,5]
 x=np.array(my_list)
-print(x)
+print(x) 
 ```
 
     [1 4 5]
@@ -878,7 +867,7 @@ print(x)
 ```python
 my_list=[1.0,4,5]
 x=np.array(my_list)
-print(x)
+print(x) 
 ```
 
     [1. 4. 5.]
@@ -902,7 +891,7 @@ np.array(my_list, dtype=np.int32)
     <ipython-input-114-909efabe753f> in <module>
           1 my_list=[1.0,4,5,"goods"]
     ----> 2 np.array(my_list, dtype=np.int32)
-
+    
 
     ValueError: invalid literal for int() with base 10: 'goods'
 
@@ -966,9 +955,9 @@ my_array_1+my_array_2
 
     <ipython-input-118-64ed6476a96a> in <module>
     ----> 1 my_array_1+my_array_2
+    
 
-
-    ValueError: operands could not be broadcast together with shapes (4,) (3,)
+    ValueError: operands could not be broadcast together with shapes (4,) (3,) 
 
 
 
@@ -1143,7 +1132,7 @@ mqqq[0][0]
 
 
 
-### _Notice that there is a difference for two different way of getting value with the index_
+### _Notice that there is a difference for two different way of getting value with the index_ 
 ###### -----------------------------------------------
 
 ## 2. **Matplotlib** look at the full [Documentation](https://matplotlib.org/users/index.html)
@@ -1222,7 +1211,7 @@ for j in range(5):
     y=[J*i for i in range(10)]
     plt.plot(x,y, label="line number: {}".format(J))
 
-
+    
 plt.title(r"Few lines!!!")
 
 plt.xlabel(r"$x$")
