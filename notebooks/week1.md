@@ -11,24 +11,18 @@ location: "Riverside, USA"
 
 
 
-### ====================================================
+
 # **The Foundation of Applied Machine Learning**
 
 
 ## Spring 2019
 
-### ===================================================
 ### Instructor: [**Prof. Bahram Mobasher**](http://faculty.ucr.edu/~mobasher/)
 ### Teaching Assistance: [**Abtin Shahidi**](https://abtinshahidi.github.io/) email *abtin.shahidi--at--email.ucr.edu*
-### ===================================================
-### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
-### ===================================================
 
 
-# **Week 1**
 
-## A very general introduction to python 3
-### =============================================================================
+# A general introduction to python 3
 
 ### Python is an interpreted, generel-purpose, and high-level programming language.
 * The python code is automatically compiled to a byte code and then excecuted; which make it perfect for using it as scripting language. On the other hand languages such as C need to be compiled on the machine first then can be excecuted. (which make the program in C to be very fast)
