@@ -22,7 +22,7 @@ Technical issues:
 Courses:
 ======
 
-[Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/course1-Python)
+[Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1-Python)
 
 
 Assignments:

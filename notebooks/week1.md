@@ -2,7 +2,7 @@
 title: "Week 1"
 collection: teaching
 type: "Graduate course"
-permalink: /teaching/2019-spring-foundation-machine-learning/week1-Python
+permalink: /teaching/2019-spring-foundation-machine-learning/week1
 venue: "University of California, Riverside,  Department of Physics and Astronomy"
 date: 2019-04-04
 location: "Riverside, USA"
