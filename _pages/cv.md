@@ -17,16 +17,32 @@ Education
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2016-now: Research Assistant
+  * University of California, Riverside
+  * Research topic: High redshift galaxies, multiwavelenght catalogs
+  * Supervisor: Professor [Bahram Mobasher](http://faculty.ucr.edu/~mobasher/)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2016-2018: Teaching Assistant
+  * University of California, Riverside
+  * Teaching topic: Several Physics labs, "The Origin"
+  * Duties: Assignments, exams, discussion sessions
+  * Supervisor: Professor [Bahram Mobasher](http://faculty.ucr.edu/~mobasher/)
 
+* 2015-2016: Research Assistant
+  * Sharif University of Technology
+  * Research topic: 21cm cosmology
+  * Supervisor: Professor [Shant Baghram](http://sharif.edu/~baghram/)
+
+* 2015-2016: Research Assistant
+  * Sharif University of Technology
+  * Research topic: Quantum graphity (A background independent model for quantum gravity)
+  * Supervisor: Professor [Vahid Karimipour](http://physics.sharif.edu/~vahid/)
+
+
+* 2012-2016: High school Teacher and tutor for students in physics and astronomy olympiads
+  * Salam, Allame Helli, Allame tabatabayi High schools
+  * Teaching Topics: Newotonian Mechanics, Special relativity, Orbital Mechanics, Data analysis, Stellar astrophysics, Cosmology, Thermodynamics, Electromagnetism, Optics  
+  
 Computer Skills
 ======
 * Advanced: Python
