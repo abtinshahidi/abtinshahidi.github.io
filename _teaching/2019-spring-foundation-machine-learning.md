@@ -16,7 +16,9 @@ What is this course about?
 
 Machine Learning is about building automated methods that improve their own performance through learning patterns in data, and then use the uncovered patterns, which acts as our theoretical model, to predict the future and make decisions. Examples include document, image, and handwriting classification, spam filtering, face/speech recognition, decision making, automated navigation to name a few. This course covers the theory and practical algorithms for machine learning from a variety of perspectives.
 
-[link](_teaching/2019-spring-foundation-machine-learning/course1.md)
+[link](/teaching/2019-spring-foundation-machine-learning/course1-Python)
+
+
 Heading 2
 ======
 
