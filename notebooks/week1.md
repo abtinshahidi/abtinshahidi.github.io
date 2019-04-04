@@ -17,11 +17,12 @@ location: "Riverside, USA"
 ### Instructor: [**Prof. Bahram Mobasher**](http://faculty.ucr.edu/~mobasher/)
 ### Teaching Assistance: [**Abtin Shahidi**](https://abtinshahidi.github.io/) email *abtin.shahidi--at--email.ucr.edu*
 
+<br/>
 
 # A general introduction to python 3
 
 ### Python is an interpreted, generel-purpose, and high-level programming language.
-* The python code is automatically compiled to a byte code and then excecuted; which make it perfect for using it as scripting language. On the other hand languages such as C need to be compiled on the machine first then can be excecuted. (which make the program in C to be very fast)
+* The python code is automatically compiled to a byte code and then executed; which make it perfect for using it as scripting language. On the other hand languages such as C need to be compiled on the machine first then can be executed. (which make the program in C to be very fast)
 * The python has built-in high level data structures: list, string, dictionary, tuple, ...
 * Very large community which makes the debugging much easier as well as having access to a comprehensive standard library.
 * Python supports multiple programming paradigms, including object-oriented, imperative, functional and procedural.
@@ -30,7 +31,7 @@ location: "Riverside, USA"
 ## Installing Python on your machine:
 
 ### Creating Virtual environment: (*optional but highly recommended*)
-* It is a better practice to install python in a virtual environment to avoid any future dependency errors. For intalling virtual enviroment you can use any of the following methods:
+* It is a better practice to install python in a virtual environment to avoid any future dependency errors. For installing virtual enviroment you can use any of the following methods:
    1. [pipenv](https://pipenv.readthedocs.io/en/latest/)
    2. [venv](https://docs.python.org/3/library/venv.html)
    3. installing [conda](https://docs.conda.io/projects/conda/en/latest/index.html) (Package, dependency and environment management for any language) and using it's [environment manager](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
@@ -99,7 +100,7 @@ deactivate
 ```shell
 mkvirtualenv [-a project_path] [-i package] [-r requirements_file] [virtualenv options] ENVNAME
 ```
-### <span style="color:red">_This is the way to install all the packages needed._</span>
+### <span style="color:#cc0000">_This is the way to install all the packages needed._</span>
 
 ### For checking the <span style="color:green">command references</span> for virtualenvwrapper check [https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html)
 
@@ -308,7 +309,7 @@ for i in list_1:
     5
 
 
-### <span style="color:green">**More info:** </span>: https://docs.python.org/3/tutorial/controlflow.html
+### <span style="color:green">**More info:** </span>: [https://docs.python.org/3/tutorial/controlflow.html](https://docs.python.org/3/tutorial/controlflow.html)
 
 
 ### ===================================================
@@ -478,7 +479,7 @@ my_list_1[3:]
 
 
 ### **Multiplying a list by a number:**
-<span style="color:red">The number only can be integer. (else result in a TypeError)</span>
+<span style="color:#cc0000">The number only can be integer. (else result in a TypeError)</span>
 
 
 ```python
@@ -1142,7 +1143,7 @@ mqqq[0][0]
 > ### Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 
 
-### <span style="color:red">The matplotlib library is huge and it takes time to be familiar with it's features!</span>
+### <span style="color:#cc0000">The matplotlib library is huge and it takes time to be familiar with it's features!</span>
 
 
 ```python
