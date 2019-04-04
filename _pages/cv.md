@@ -43,12 +43,21 @@ Work experience
   * Salam, Allame Helli, Allame tabatabayi High schools
   * Teaching Topics: Newotonian Mechanics, Special relativity, Orbital Mechanics, Data analysis, Stellar astrophysics, Cosmology, Thermodynamics, Electromagnetism, Optics  
 
-Computer Skills
+Technical Skills
 ======
+
+## Computer Programming:
+
+
 * Advanced: Python
   <!-- * Packages: Numpy, Scipy, Matplotlib, Scikit-learn, Tensorflow, PyTorch -->
 * Intermediate: Mathematica, C/C++, $\LaTeX$, GNU/Linux, shell scripting
 * Basic: html, css, R, javascript, markdown, Matlab
+
+## Observing Experience:
+
+* **3 Nights** with [MOSFIRE](https://www2.keck.hawaii.edu/inst/mosfire/home.html) on the [Keck II](http://keckobservatory.org/index.php), [Mauna Kea](https://en.wikipedia.org/wiki/Mauna_Kea#Summit_observatories), Hawaii, USA
+* 2016 Observational Astronomy [Workshop Lick Observatory](http://mthamilton.ucolick.org/EVENTS/2016/), [Mount Hamilton](https://en.wikipedia.org/wiki/Mount_Hamilton_(California)), California, USA
 
 Publications
 ======
