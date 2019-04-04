@@ -25,7 +25,7 @@ Machine Learning is about building automated methods that improve their own perf
 
 
 ## Assignments:
-
+[Week 1: Homework](http://academicpages.github.io/files/week1.pdf)
 
 <!-- ## Projects: -->
 
@@ -36,4 +36,4 @@ Machine Learning is about building automated methods that improve their own perf
 [matplotlib](http://academicpages.github.io/files/notebook-cheatsheet.pdf)
 [Jupyter notebook](http://academicpages.github.io/files/notebook-cheatsheet.pdf)
 
-# Related materials:
+<!-- # Related materials: -->

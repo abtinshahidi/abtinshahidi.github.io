@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Physics, Sharif University of Technology, Tehran, Iran 2015
-* M.S. in Physics and Astronomy, University of California, Riverside, USA, 2016
-* Ph.D in Physics and Astronomy, University of California, Riverside, USA, 2021-22 (expected)
+* B.S. in Physics, [Sharif University of Technology](http://www.en.sharif.edu/), Tehran, Iran 2015
+* M.S. in Physics and Astronomy, [University of California, Riverside](https://www.ucr.edu/), USA, 2016
+* Ph.D in Physics and Astronomy, [University of California, Riverside](https://www.ucr.edu/), USA, 2021-22 (expected)
 
 Work experience
 ======
@@ -24,7 +24,7 @@ Work experience
 
 * 2016-2018: Teaching Assistant
   * University of California, Riverside
-  * Teaching topic: Several Physics labs, "The Origin"
+  * Teaching topic: Several Physics labs, ["The Origin"](https://titles.cognella.com/origins-9781626614819)
   * Duties: Assignments, exams, discussion sessions
   * Supervisor: Professor [Bahram Mobasher](http://faculty.ucr.edu/~mobasher/)
 
@@ -42,13 +42,13 @@ Work experience
 * 2012-2016: High school Teacher and tutor for students in physics and astronomy olympiads
   * Salam, Allame Helli, Allame tabatabayi High schools
   * Teaching Topics: Newotonian Mechanics, Special relativity, Orbital Mechanics, Data analysis, Stellar astrophysics, Cosmology, Thermodynamics, Electromagnetism, Optics  
-  
+
 Computer Skills
 ======
 * Advanced: Python
-  * Packages: Numpy, Scipy, Matplotlib, Scikit-learn, Tensorflow, PyTorch
-* Intermediate: Mathematica, C/C++, LaTeX, GNU/Linux, shell scripting
-* Basic: javascript, Julia, R, markdown, Matlab
+  <!-- * Packages: Numpy, Scipy, Matplotlib, Scikit-learn, Tensorflow, PyTorch -->
+* Intermediate: Mathematica, C/C++, $\LaTeX$, GNU/Linux, shell scripting
+* Basic: html, css, R, javascript, markdown, Matlab
 
 Publications
 ======
