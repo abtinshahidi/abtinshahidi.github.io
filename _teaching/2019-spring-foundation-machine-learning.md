@@ -25,15 +25,15 @@ Machine Learning is about building automated methods that improve their own perf
 
 
 ## Assignments:
-[Week 1: Homework](files/week1.pdf)
+[Week 1: Homework](https://abtinshahidi.github.io/files/week1.pdf)
 
 <!-- ## Projects: -->
 
 
 # Useful hacks and cheat sheets:
-* [Linear Algebra](files/linearAlgebra-cheatsheet.pdf)
-* [Numpy](files/numpy-cheatsheet.pdf)
-* [matplotlib](files/notebook-cheatsheet.pdf)
-* [Jupyter notebook](files/notebook-cheatsheet.pdf)
+* [Linear Algebra](https://abtinshahidi.github.io/files/linearAlgebra-cheatsheet.pdf)
+* [Numpy](https://abtinshahidi.github.io/files/numpy-cheatsheet.pdf)
+* [matplotlib](https://abtinshahidi.github.io/files/notebook-cheatsheet.pdf)
+* [Jupyter notebook](https://abtinshahidi.github.io/files/notebook-cheatsheet.pdf)
 
 <!-- # Related materials: -->
