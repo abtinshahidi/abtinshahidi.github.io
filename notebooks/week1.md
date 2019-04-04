@@ -78,16 +78,12 @@ sudo pip3 install virtualenvwrapper
 ```
 
 ### 4. Setup the shell startup file
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add the following lines to your shell startup file (.bashrc, .profile, etc.) to set the location which the virtual environments should be and the location of the script installed with this package:
+* Add the following lines to your shell startup file (.bashrc, .profile, etc.) to set the location which the virtual environments should be and the location of the script installed with this package:
 ```shell
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ```
-### After editing it, reload the startup file (e.g., run source ~/.bashrc).
-
-### ===================================================
-
-### Test and build your own virtual-environment via command line:
+* After editing it, reload the startup file (e.g., run source ~/.bashrc). Now test and build your own virtual-environment via command line:
 ```shell
 mkvirtualenv temp
 workon temp
@@ -96,7 +92,7 @@ pip3 install <packages>
 
 deactivate
 ```
-#### **This is the full syntax for mkvirtualenv.** (requirement file is very useful when you have a list of needed packages and you want to install all of them with one command)
+### **This is the full syntax for mkvirtualenv.** (requirement file is very useful when you have a list of needed packages and you want to install all of them with one command)
 ```shell
 mkvirtualenv [-a project_path] [-i package] [-r requirements_file] [virtualenv options] ENVNAME
 ```
@@ -113,28 +109,26 @@ workon ML
 pip3 install numpy matplotlib
 ```
 
-### One of the easiest ways to develop python codes (interactive feature) is to use [jupyter](https://jupyter.org/) notebook and [jupyter lab](https://github.com/jupyterlab/jupyterlab). They can be intalled with pip3 install.
+ One of the easiest ways to develop python codes (interactive feature) is to use [jupyter](https://jupyter.org/) notebook and [jupyter lab](https://github.com/jupyterlab/jupyterlab). They can be intalled with pip3 install.
 
-### ========================================================================
-### Now you can check your installed packages by:
+
+* Now you can check your installed packages by:
 
 ```shell
 pip3 freeze
 ```
 
-### And you can save them un a text file for future use:
+* And you can save them in a text file for future use:
 ```shell
 pip3 freeze > requirement.txt
 ```
 
 
-### ===================================================
 
 # **Python as a simple calculator!!**
 
-### ===================================================
 
-It is very easy to define variables and do various calculation with them:
+* It is very easy to define variables and do various calculation with them:
 
 
 ```python
@@ -196,7 +190,7 @@ print(x-y,x+y, x/y,x*y)
     -10 30 0.5 200
 
 
-### **In interactive mode, the last printed expression is assigned to the variable _**
+* **In interactive mode, the last printed expression is assigned to the variable _**
 
 
 ```python
@@ -234,9 +228,7 @@ x+y
 
 
 
-### ===================================================
 # **Control Flow Tools**
-### ===================================================
 
 
 ## 1.**while** statement
@@ -312,10 +304,8 @@ for i in list_1:
 ### <span style="color:green">**More info:** </span>: [https://docs.python.org/3/tutorial/controlflow.html](https://docs.python.org/3/tutorial/controlflow.html)
 
 
-### ===================================================
 # **Built-in data structures**
 
-### ===================================================
 
 ## **1. Strings**
 
@@ -416,7 +406,7 @@ my_list_1+my_list_2
 
 
 
-### Finding the value with index and common use of indexing syntax:
+* Finding the value with index and common use of indexing syntax:
 
 
 ```python
@@ -478,7 +468,7 @@ my_list_1[3:]
 
 
 
-### **Multiplying a list by a number:**
+* **Multiplying a list by a number:**
 <span style="color:#cc0000">The number only can be integer. (else result in a TypeError)</span>
 
 
@@ -626,12 +616,10 @@ my_dictionary
 
 
 
-### **Important**
+### **Important**: <span style="color:#cc0000">The Key can be any immutable object such as strings, numbers, and tuples. However, the Value can be any object. (mutable and immutable)</span>
 
-### The Key can be any immutable object such as strings, numbers, and tuples
-### The Value can be any object. (mutable and immutable)
 
-### **Few useful syntaxes for getting back the values, keys, (key,value) pairs:**
+* **Few useful syntax for getting back the values, keys, (key,value) pairs:**
 
 
 ```python
@@ -645,7 +633,7 @@ my_dictionary["hello"]
 
 
 
-### If the key is not in the dictionary you going to get KeyError
+* <span style="color:#cc0000">If the key is not in the dictionary you going to get KeyError</span>
 
 
 ```python
@@ -762,10 +750,8 @@ dict_2["first_dict"]['x']
 
 
 
-### ===================================================
 # **Importing packages and modules**
 
-### ===================================================
 
 
 ### **Different ways of calling a particular module/method (linspace)**
@@ -832,11 +818,9 @@ linspace(1,10,20)
 
 
 
-### ===================================================
 
 # Some Useful packages and modules:
 
-### ===================================================
 
 
 ## 1. **Numpy** look at the full [Documentation](https://docs.scipy.org/doc/numpy/reference/)
@@ -912,7 +896,7 @@ my_array_0
 
 
 
-### For keeping the type you should use a list in which all the elements have the same type
+* For keeping the type you should use a list in which all the elements have the same type
 
 
 ```python
