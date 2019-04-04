@@ -13,14 +13,12 @@ location: "Riverside, USA"
 
 
 # **The Foundation of Applied Machine Learning**
-
-
 ## Spring 2019
-
 ### Instructor: [**Prof. Bahram Mobasher**](http://faculty.ucr.edu/~mobasher/)
 ### Teaching Assistance: [**Abtin Shahidi**](https://abtinshahidi.github.io/) email *abtin.shahidi--at--email.ucr.edu*
 
-
+#
+#
 
 # A general introduction to python 3
 
@@ -33,7 +31,7 @@ location: "Riverside, USA"
 
 ## Installing Python on your machine:
 
-### Creating Virtual enviroment: (*optional but highly recommended*)
+### Creating Virtual environment: (*optional but highly recommended*)
 * It is a better practice to install python in a virtual environment to avoid any future dependency errors. For intalling virtual enviroment you can use any of the following methods:
    1. [pipenv](https://pipenv.readthedocs.io/en/latest/)
    2. [venv](https://docs.python.org/3/library/venv.html)
