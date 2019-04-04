@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Abtin Shahidi"
   avatar           : "profile.png"
-  bio              : "PhD student in Physics and Astronomy"
-  location         : "Riverside, California 92521, USA"
-  employer         : "University of California, Riverside"
+  bio              : "PhD student in Physics and Astronomy @ University of California, Riverside"
+  location         : "Riverside, CA 92521, USA"
+  employer         : "UC Riverside"
   pubmed           :
   googlescholar    :
   email            : "abtinshahidi@gmail.com"
@@ -213,7 +213,7 @@ defaults:
       type: teaching
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       comments: true
   # _publications

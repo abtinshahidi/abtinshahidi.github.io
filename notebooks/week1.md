@@ -17,8 +17,6 @@ location: "Riverside, USA"
 ### Instructor: [**Prof. Bahram Mobasher**](http://faculty.ucr.edu/~mobasher/)
 ### Teaching Assistance: [**Abtin Shahidi**](https://abtinshahidi.github.io/) email *abtin.shahidi--at--email.ucr.edu*
 
-#
-#
 
 # A general introduction to python 3
 
