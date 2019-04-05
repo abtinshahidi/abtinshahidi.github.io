@@ -33,7 +33,7 @@ Machine Learning is about building automated methods that improve their own perf
 # Useful hacks and cheat sheets:
 * [Linear Algebra](https://abtinshahidi.github.io/files/linearAlgebra-cheatsheet.pdf)
 * [Numpy](https://abtinshahidi.github.io/files/numpy-cheatsheet.pdf)
-* [matplotlib](https://abtinshahidi.github.io/files/notebook-cheatsheet.pdf)
+* [matplotlib](https://abtinshahidi.github.io/files/matplotlib-cheatsheet.pdf)
 * [Jupyter notebook](https://abtinshahidi.github.io/files/notebook-cheatsheet.pdf)
 
 <!-- # Related materials: -->
