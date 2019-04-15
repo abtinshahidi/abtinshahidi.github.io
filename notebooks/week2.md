@@ -8,7 +8,7 @@ date: 2019-03-03
 location: "Riverside, USA"
 ---
 
-<script src="//home/abtin/Documents/personal_website/abtinshahidi.github.io/latex_hack/math-code.js"></script>
+<script src="/home/abtin/Documents/personal_website/abtinshahidi.github.io/latex_hack/math-code.js"></script>
 
 
 # **The Foundation of Applied Machine Learning**
