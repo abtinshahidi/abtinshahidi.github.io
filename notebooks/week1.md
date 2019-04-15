@@ -119,7 +119,7 @@ Then:
 pip3 install jupyter
 ```
 
-Now you can access to jupyter notebook under your current directory if you type in the following:
+Now you can access jupyter notebook under your current directory if you type in the following:
 ```shell
 jupyter notebook
 ```
@@ -129,6 +129,7 @@ If you want to install [jupyter lab](https://github.com/jupyterlab), run the fol
 pip3 install jupyterlab
 ```
 For further details click on the links below:
+
 [jupyter](https://jupyter.readthedocs.io/en/latest/install.html)
 
 [jupyter lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)

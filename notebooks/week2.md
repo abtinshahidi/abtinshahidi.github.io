@@ -234,7 +234,7 @@ print(m_X_max_prob)
     [7.845]
 
 
-### There is an analytical way of getting to the same results, since we are working with gaussian functions which have very special properties. One that we need is the following:
+### There is an analytic way of getting to the same results, since we are working with Gaussian functions which have very special properties. One that we need is the following:
   **$Gaussian(\mu_1,\sigma_1)*Gaussian(\mu_2,\sigma_2)=Gaussian(\frac{\mu_1\sigma_2^2+\mu_2\sigma_1^2}{\sigma_1^2+\sigma_2^2},\frac{\sigma_1\sigma_2}{\sqrt{\sigma_1^2+\sigma_2^2}})$**
 
 
