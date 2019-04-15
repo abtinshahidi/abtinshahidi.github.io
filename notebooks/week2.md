@@ -20,7 +20,7 @@ location: "Riverside, USA"
 ### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
 
 
-
+<hr>
 # **Week 2**
 
 ## Introduction to statistics:
@@ -34,7 +34,7 @@ location: "Riverside, USA"
 
 #### In this course we are going to discuss how can we clean up a given dataset, then analyze and visualize important information in it.
 
-<hr></hr>
+<hr>
 
 ### First let's start with a quick excersise:
 
