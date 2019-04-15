@@ -27,22 +27,22 @@ Videos are accessible in the iLearn under section(002)
 
 
 ## Lectures:
-[Lecture 1: ](https://abtinshahidi.github.io/files/lecture1.pdf)
+[Lecture 1](https://abtinshahidi.github.io/files/lecture1.pdf)
 
-[Lecture 2: ](https://abtinshahidi.github.io/files/lecture2.pdf)
+[Lecture 2](https://abtinshahidi.github.io/files/lecture2.pdf)
 
-[Lecture 3: ](https://abtinshahidi.github.io/files/lecture3.pdf)
+[Lecture 3](https://abtinshahidi.github.io/files/lecture3.pdf)
 
-[Lecture 4: ](https://abtinshahidi.github.io/files/lecture4.pdf)
+[Lecture 4](https://abtinshahidi.github.io/files/lecture4.pdf)
 
-[Lecture 5: ](https://abtinshahidi.github.io/files/lecture5.pdf)
+[Lecture 5](https://abtinshahidi.github.io/files/lecture5.pdf)
 
 
 ## Assignments:
-[Week 1: ](https://abtinshahidi.github.io/files/week1.pdf)
+[Week 1](https://abtinshahidi.github.io/files/week1.pdf)
 
 
-[Week 2: ](https://abtinshahidi.github.io/files/week2.pdf)
+[Week 2](https://abtinshahidi.github.io/files/week2.pdf)
 
 
 <!-- ## Projects: -->
