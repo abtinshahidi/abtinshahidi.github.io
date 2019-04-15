@@ -141,10 +141,10 @@ $ X_2 $: mass_atlas, mass_err_atlas
   This is much easier to handle since we can assume some models for $ p(X_1, X_2|m_X)$. (We don't need to take care about the normalization here, we are going to get there next week)
 
 ### **First let's make some assumptions:**
-  1. Bayesian statistics works!
-  2. The measurements are independent. $p(X_1, X_2|m_X) = p(X_1|m_X) p(X_1|m_X)$
-  3. Measurements follow a random Gaussian distribution. $PDF(m_{measured})=Gaussian(m_{measured}, \sigma_{measured})$
-  4. We have no other information about $m_X$, so we can assume the simplest form which is uniform (tophat) probability distribution (prior) for this quantity. (quantity that we are looking for)
+  1. Bayesian statistics works! </br>
+  2. The measurements are independent. $p(X_1, X_2|m_X) = p(X_1|m_X) p(X_1|m_X)$ </br>
+  3. Measurements follow a random Gaussian distribution. $PDF(m_{measured})=Gaussian(m_{measured}, \sigma_{measured})$ </br>
+  4. We have no other information about $m_X$, so we can assume the simplest form which is uniform (tophat) probability distribution (prior) for this quantity. (quantity that we are looking for) </br>
 
 <hr>
 
