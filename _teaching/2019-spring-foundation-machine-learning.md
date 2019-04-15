@@ -22,7 +22,7 @@ Videos are accessible in the iLearn under section(002)
 
 ## Courses:
 [Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1)
-
+[Week 2: Statistics](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
 
 ## Assignments:
 [Week 1: Homework](https://abtinshahidi.github.io/files/week1.pdf)
