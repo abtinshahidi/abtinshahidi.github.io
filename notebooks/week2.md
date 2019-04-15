@@ -143,7 +143,7 @@ $ X_2 $: mass_atlas, mass_err_atlas
 ### **First let's make some assumptions:**
   1. Bayesian statistics works!  
 
-  2. The measurements are independent. $p(X_1, X_2|m_X)=p(X_1|m_X)p(X_1|m_X)$  
+  2. The measurements are independent. $p(X_1, X_2\|m_X)=p(X_1\|m_X)p(X_1\|m_X)$  
 
   3. Measurements follow a random Gaussian distribution. $PDF(m_{measured})=Gaussian(m_{measured}, \sigma_{measured})$  
 
