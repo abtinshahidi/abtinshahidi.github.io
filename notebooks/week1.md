@@ -109,7 +109,29 @@ workon ML
 pip3 install numpy matplotlib
 ```
 
- One of the easiest ways to develop python codes (interactive feature) is to use [jupyter](https://jupyter.org/) notebook and [jupyter lab](https://github.com/jupyterlab/jupyterlab). They can be intalled with pip3 install.
+ One of the easiest ways to develop python codes (interactive feature) is to use [jupyter](https://jupyter.org/) notebook and [jupyter lab](https://github.com/jupyterlab/jupyterlab). They can be installed with pip3 install. But first make sure you have an updated version of pip installed:
+```shell
+pip3 install --upgrade pip
+```
+Then:
+
+```shell
+pip3 install jupyter
+```
+
+Now you can access to jupyter notebook under your current directory if you type in the following:
+```shell
+jupyter notebook
+```
+
+If you want to install [jupyter lab](https://github.com/jupyterlab), run the following:
+```shell
+pip3 install jupyterlab
+```
+For further details click on the links below:
+[jupyter](https://jupyter.readthedocs.io/en/latest/install.html)
+
+[jupyter lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
 
 
 * Now you can check your installed packages by:
