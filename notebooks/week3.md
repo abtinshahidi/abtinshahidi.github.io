@@ -1,4 +1,4 @@
-  ---
+---
 title: "Week 3"
 collection: teaching
 type: "Online/in-Person Graduate course"
