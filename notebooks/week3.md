@@ -1,8 +1,8 @@
----
+  ---
 title: "Week 3"
 collection: teaching
 type: "Online/in-Person Graduate course"
-permalink: /teaching/2019-spring-foundation-machine-learning/week3 
+permalink: /teaching/2019-spring-foundation-machine-learning/week3
 venue: "University of California, Riverside, Department of Physics and Astronomy"
 date: 2019-04-16
 location: "Riverside, USA"
@@ -60,10 +60,11 @@ Let's say that we are going to toss the coins $N$ times and we get $n$ desired o
 
 But, what are the chances of getting $n$ out of $N$ coin tosses?
 
-$n$ desired outcome probability is $p^n$; also we have $N-n$ undesired outcome during the experiment which means that the total probability of getting $n$ 1s and $N-n$ 0s is $p^n q^{N-n}$
+
+Probability of $n$ desired outcomes, is $p^n$; also we have $N-n$ undesired outcome during the experiment which means that the total probability of getting ($n$) ones and ($N-n$) zeros is $p^n q^{N-n}$.
 
 Also, we do not care about the **order** of the coin toss. (e.g. (1,0,0,0,1), (0,1,1,0,0), (1,1, 0, 0, 0) all are considered same outcome)
-So, we need to multiply the previous probability by number of configurations. (Number of ways you can choose $n$ ones, and $N-n$ zeros; which is:  $\binom {N}{n}$
+So, we need to multiply the previous probability by number of configurations. (Number of ways you can choose ($n$) ones, and ($N-n$) zeros; which is:  $\binom {N}{n}$)
 
 So the probability of the $n$ heads out of $N$ coin toss, when the probability of single **head** is $p$, is the following:
 
@@ -127,7 +128,7 @@ from time import time
 
 In the following cell, we are going to calculate the probability of getting all the values in the data-set, while using different $p$. Since, we can assume that the experiments are independent, we can simply multiply all the probabilities. Then looking for the $p$ value which maximize that probability; or in other words, is the most likely value for $p$ given our data-set.
 
-You should notice that we are using the **Bayes' law** again; we are looking for $P(p|X)$ in which $X$ is the whole data-set. But, we can turn that around and look for much simpler quantity, using Bayes' law: $P(p|X) \sim P(X|p)$
+You should notice that we are using the **Bayes' law** again; we are looking for $P(p\|X)$ in which $X$ is the whole data-set. But, we can turn that around and look for much simpler quantity, using Bayes' law: $P(p\|X) \sim P(X\|p)$
 
 
 ```python
@@ -279,10 +280,9 @@ plt.show()
 
 So if we somehow manage to find the blue area we can find the numerical value for $\pi$.
 
-\begin{align*}
-& S = \frac{\pi R^2}{4} = \frac{\pi}{4} \quad \textrm{Since we know $R=1$} \\
-& \pi = 4S \quad \textrm{So we need S}
-\end{align*}
+$S = \frac{\pi R^2}{4} = \frac{\pi}{4} \quad \textrm{Since we know $R=1$}$ \\
+$\pi = 4S \quad \textrm{So we need S}$
+
 
 ### <span style="color:	#E52B1D">How can we find the area numerically?</span>
 
@@ -323,9 +323,7 @@ Now we have an array of distances for points inside the circle ($d((x,y), (0,0))
 If we define $n$ to be the number of points within circle, and $N$ to be total number of points,
 We can find the area to be:
 
-\begin{equation*}
-S = \frac{n}{N}
-\end{equation*}
+$S = \frac{n}{N}$
 
 
 ```python
@@ -616,15 +614,12 @@ $A_{shape} = A_{square} - 2 A_{extra}$
 Let's plug in known quantities:
 $A_{shape} = R^2 - 2(R^2 - \frac{\pi R^2}{4})$
 
-\begin{equation*}
-A_{shape} = R^2 (\frac{\pi}{2}-1)
-\end{equation*}
 
-for special case of $R=1$ it becomes:
+$A_{shape} = R^2 (\frac{\pi}{2}-1)$
 
-\begin{equation*}
-A_{shape} =\frac{\pi}{2}-1
-\end{equation*}
+For special case of $R=1$ it becomes:
+
+$A_{shape} =\frac{\pi}{2}-1$
 
 Coding directly to find the area: (above calculation is inside the code)
 
