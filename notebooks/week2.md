@@ -4,7 +4,7 @@ collection: teaching
 type: "Online/in-Person Graduate course"
 permalink: /teaching/2019-spring-foundation-machine-learning/week2
 venue: "University of California, Riverside, Department of Physics and Astronomy"
-date: 2019-03-03
+date: 2019-04-05
 location: "Riverside, USA"
 ---
 

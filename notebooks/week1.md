@@ -84,6 +84,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ```
 * After editing it, reload the startup file (e.g., run source ~/.bashrc). Now test and build your own virtual-environment via command line:
+
 ```shell
 mkvirtualenv temp
 workon temp
@@ -92,15 +93,19 @@ pip3 install <packages>
 
 deactivate
 ```
+
 ### **This is the full syntax for mkvirtualenv.** (requirement file is very useful when you have a list of needed packages and you want to install all of them with one command)
+
 ```shell
 mkvirtualenv [-a project_path] [-i package] [-r requirements_file] [virtualenv options] ENVNAME
 ```
+
 ### <span style="color:#cc0000">_This is the way to install all the packages needed._</span>
 
 ### For checking the <span style="color:green">command references</span> for virtualenvwrapper check [https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html)
 
 ### ----> Now go ahead and build a Machine-learning virtual enviroment:
+
 ```shell
 mkvirtual ML
 
