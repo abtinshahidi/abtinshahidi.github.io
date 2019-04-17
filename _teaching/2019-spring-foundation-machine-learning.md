@@ -20,6 +20,10 @@ Machine Learning is about building automated methods that improve their own perf
 Videos are accessible in the iLearn under section(002)
 
 
+## Syllabus of the course:
+[Syllabus](https://abtinshahidi.github.io/files/Syllabus.pdf)
+
+
 ## Courses:
 [Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1)  
 
