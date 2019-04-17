@@ -18,7 +18,7 @@ location: "Riverside, USA"
 
 ### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
 
-
+<br>
 
 # **Week 3**
 
