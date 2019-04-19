@@ -105,7 +105,7 @@ def binomial(n=0, N=1, p=1):
 
     OUTPUT:
             Probability of getting n desired outcome, out of N trials,
-            when the probality of desired outcome is p
+            when the probability of desired outcome is p
     """
     from math import factorial
     factor = factorial(N)/(factorial(n)*factorial(N-n))
@@ -696,11 +696,11 @@ np.pi/2-1
 
 ## We are going to make a random walk and try to answer basic questions like what is the expected distance from the staring point, path, ...
 
-There are few ways of appraoching this problem:
-1. **Functional approach**: Building the whole process as a pipeline of differnet functions, which is the approach we used so far.
-2. **Object oriented approach**: Which is concepetually a very differnet approach but by doing this excersise we'll learn why this approach can be very useful for some problems.
+There are few ways of approaching this problem:
+1. **Functional approach**: Building the whole process as a pipeline of different functions, which is the approach we used so far.
+2. **Object oriented approach**: Which is conceptually a very different approach but by doing this exercise we'll learn why this approach can be very useful for some problems.
 
-_**Tip:**_ Desiding what appraoch to take for a particular problem, depends on many factors. One of the easiest factor which is mainly independent of the problem is that whether you are going to reuse your codes again or adding differnet features to it later. If that's the case, generally speaking it is better to try to think about the problem and implement your code with the object oriented approach.  
+_**Tip:**_ Deciding what approach to take for a particular problem, depends on many factors. One of the easiest factor which is mainly independent of the problem is that whether you are going to reuse your codes again or adding different features to it later. If that's the case, generally speaking it is better to try to think about the problem and implement your code with the object oriented approach.  
 
 ### Like always let's start with the simplest case: 1-d random walk
 
@@ -710,7 +710,7 @@ def random_walk_1d(n, step=1):
     """This is a function for making a 1-d random walk
     INPUT:
           n (int): number of steps to take
-          step (float): lenght of each steps
+          step (float): length of each steps
 
     OUTPUT:
           positions (numpy.array): an array of different positions during
@@ -901,7 +901,7 @@ def Simulate_walks(number_of_steps, number_of_simulations):
     return simulation
 ```
 
-### Now let's make a random walker which can move along differnt angles.
+### Now let's make a random walker which can move along different angles.
 
 
 ```python
@@ -960,7 +960,7 @@ plt.show()
 # Let's implement the random walk in a object-oriented method:
 
 ### First we need to define few classes:
-First one is the posistion class which act as our position tracker and have few methods: `move`, `findX`, `findY`, and `distance`
+First one is the position class which act as our position tracker and have few methods: `move`, `findX`, `findY`, and `distance`
 
 
 ```python
@@ -1170,9 +1170,9 @@ def test_simulation(walk_lenght_array, number_of_simulations, walker_class_type)
     """
     Some sanity checks on the simulations
     """
-    for walk_lenght in walk_lenght_array:
-        _distances_ = simulate_walks(walk_lenght, number_of_simulations, walker_class_type)
-        print(walker_class_type.__name__, " random walk of {} steps".format(walk_lenght), " After {} simulations".format(number_of_simulations))
+    for walk_length in walk_length_array:
+        _distances_ = simulate_walks(walk_length, number_of_simulations, walker_class_type)
+        print(walker_class_type.__name__, " random walk of {} steps".format(walk_length), " After {} simulations".format(number_of_simulations))
         print(" Mean= {}".format(round(sum(_distances_)/len(_distances_),4)))
         print(" Max= {}".format(round(max(_distances_), 4)))
         print(" Min= {}".format(round(min(_distances_),4)))
@@ -1302,7 +1302,7 @@ plt.plot(range(number_of_steps_range), distances, label="Normal walker")
 plt.plot(range(number_of_steps_range), np.sqrt(range(number_of_steps_range)), label="$y=\sqrt{x}$")
 plt.plot(range(number_of_steps_range), slope*np.array(range(number_of_steps_range)), label="$y={} x$".format(slope))
 
-plt.xlabel(r"Number of Steps", size=16)
+plt.xlabel(r"Number of Steps", size=16)numpynumpy
 plt.ylabel(r"Average Distance from origin", size=16)
 plt.legend(fontsize=18)
 
@@ -1334,7 +1334,7 @@ right:**European Roulette**
 
 
 
-First we arer going to build a game class that initialize the staring configuration as well having some methods we need such as `spin` and `bet_pocket`:
+First we are going to build a game class that initialize the staring configuration as well having some methods we need such as `spin` and `bet_pocket`:
 
 
 ```python
@@ -1432,7 +1432,7 @@ for spins_num in list_of_spins:
 
 As you can see the variations for the money we take is huge when the number of spins are low, but when we get to  $n>10^5$ simulations our results is fairly close to zero which it is a god news since it means our game is fair.
 
-For making the European version of the game which has an extra 0 in it, we are going to make some sub-class of the fair roulette class. And the american game has another extra number 00 on top of the Europian version so we make it as a sub-class of the European game.
+For making the European version of the game which has an extra 0 in it, we are going to make some sub-class of the fair roulette class. And the american game has another extra number 00 on top of the European version so we make it as a sub-class of the European game.
 
 
 
@@ -1532,7 +1532,7 @@ for game in our_games:
 
 As you can see for small number of spins we still have a huge variations between different runs for **all versions** of the game. But the story is different for the large numbers! In the European version you are losing by about 2-3 percent and in the American version you are losing 4-5 percent on average.
 
-So now you know how casino can make money out of this game, since they are not interested in averege of the money they win/lose in small number of spins, instead they are making money on the long run.
+So now you know how casino can make money out of this game, since they are not interested in average of the money they win/lose in small number of spins, instead they are making money on the long run.
 
 
 
