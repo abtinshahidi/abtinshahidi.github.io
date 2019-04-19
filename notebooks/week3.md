@@ -10,7 +10,7 @@ location: "Riverside, USA"
 
 <script src="/home/abtin/Documents/personal_website/abtinshahidi.github.io/latex_hack/math-code.js"></script>
 
-<br></br>
+<br>
 
 # **The Foundation of Applied Machine Learning**
 ## Spring 2019
@@ -70,11 +70,11 @@ Also, we do not care about the **order** of the coin toss. (e.g. (1,0,0,0,1), (0
 So, we need to multiply the previous probability by number of configurations. (Number of ways you can choose $n$ ones, and $N-n$ zeros; which is:  $\binom {N}{n}$
 
 So the probability of the $n$ heads out of $N$ coin toss, when the probability of single **head** is $p$, is the following:
-
+$$
 \begin{equation}
 p(n|N,p)=\binom {N}{n} p^n (1-p)^{N-n}
 \end{equation}
-
+$$
 Which is called the [**binomial distribution**](https://en.wikipedia.org/wiki/Binomial_distribution).
 
 There is a pre-defined [binomial function in scipy](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.binom.html) package. However, since we are still trying to get familiar with python, let's write the function ourself as below:
@@ -286,11 +286,12 @@ plt.show()
 
 So if we somehow manage to find the blue area we can find the numerical value for $\pi$.
 
+$$
 \begin{align*}
 & S = \frac{\pi R^2}{4} = \frac{\pi}{4} \quad \textrm{Since we know $R=1$} \\
 & \pi = 4S \quad \textrm{So we need S}
 \end{align*}
-
+$$
 ### How can we find the area numerically?
 
 First we need to get familiar with the [**Monte Carlo Simulations**](https://en.wikipedia.org/wiki/Monte_Carlo_method)
@@ -330,10 +331,11 @@ Now we have an array of distances for points inside the circle ($d((x,y), (0,0))
 If we define $n$ to be the number of points within circle, and $N$ to be total number of points,
 We can find the area to be:
 
+$$
 \begin{equation*}
 S = \frac{n}{N}
 \end{equation*}
-
+$$
 
 ```python
 PI = 4 * len(circle_points)/len(distance_from_0_0)
@@ -641,15 +643,19 @@ $A_{shape} = A_{square} - 2 A_{extra}$
 Let's plug in known quantities:
 $A_{shape} = R^2 - 2(R^2 - \frac{\pi R^2}{4})$
 
+$$
 \begin{equation*}
 A_{shape} = R^2 (\frac{\pi}{2}-1)
 \end{equation*}
+$$
 
 for special case of $R=1$ it becomes:
 
+$$
 \begin{equation*}
 A_{shape} =\frac{\pi}{2}-1
 \end{equation*}
+$$
 
 Coding directly to find the area: (above calculation is inside the code)
 
