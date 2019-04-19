@@ -1541,3 +1541,11 @@ So now you know how casino can make money out of this game, since they are not i
 
 
 ### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
+
+
+
+### References:
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/index.ht
+https://en.wikipedia.org/wiki/Monte_Carlo_method
+https://www.mit.edu/~kardar/teaching/projects/chemotaxis(AndreaSchmidt)/random.htm
+http://physics.gu.se/~frtbm/joomla/media/mydocs/LennartSjogren/kap2.pdf
