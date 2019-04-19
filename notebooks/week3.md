@@ -10,6 +10,7 @@ location: "Riverside, USA"
 
 <script src="/home/abtin/Documents/personal_website/abtinshahidi.github.io/latex_hack/math-code.js"></script>
 
+<br></br>
 
 # **The Foundation of Applied Machine Learning**
 ## Spring 2019
@@ -19,9 +20,8 @@ location: "Riverside, USA"
 
 ### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
 
-### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
-
-
+### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)  
+<br></br>
 
 # **Week 3**
 
@@ -31,7 +31,8 @@ location: "Riverside, USA"
 
 
 
-### In the following exercise we are going to make some **assumption about data**, **make a model**, and **fit the parameters of the model**:
+### In the following exercise we are going to make some **assumption about data**, **make a model**, and **fit the parameters of the model**:  
+
 
 # **Flip A Coin: Is this Coin Really Fair?**
 
@@ -1522,7 +1523,7 @@ for game in our_games:
 
 
 
-As you can see for samll number of spins we still have a huge variations between different runs for **all versions** of the game. But the story is different for the large numbers! In the European version you are losing by about 2-3 percent and in the American version you are losing 4-5 percent on average.
+As you can see for small number of spins we still have a huge variations between different runs for **all versions** of the game. But the story is different for the large numbers! In the European version you are losing by about 2-3 percent and in the American version you are losing 4-5 percent on average.
 
 So now you know how casino can make money out of this game, since they are not interested in averege of the money they win/lose in small number of spins, instead they are making money on the long run.
 
