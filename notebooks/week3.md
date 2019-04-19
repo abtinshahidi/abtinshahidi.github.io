@@ -1,3 +1,15 @@
+---
+title: "Week 3"
+collection: teaching
+type: "Online/in-Person Graduate course"
+permalink: /teaching/2019-spring-foundation-machine-learning/week3
+venue: "University of California, Riverside, Department of Physics and Astronomy"
+date: 2019-04-19
+location: "Riverside, USA"
+---
+
+<script src="/home/abtin/Documents/personal_website/abtinshahidi.github.io/latex_hack/math-code.js"></script>
+
 
 # **The Foundation of Applied Machine Learning**
 ## Spring 2019
