@@ -7,6 +7,8 @@
 
 ### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
 
+### [**<<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
+
 
 
 # **Week 3**
@@ -38,7 +40,7 @@ data_array = [ 6,  7,  8, 11,  8,  7,  8,  9,  8,  5, 12,  7,  5,  8,  8,  8, 10
                7,  9,  7,  7, 12,  9, 11,  6,  5,  9,  7,  9,  7, 11,  8]
 ```
 
-First we need to come up with a model for the data. We need to find the probability of each outcome first, before getting into the estimation for fairness. Let's ask a simple questions: **What are the possible outcomes of a coin toss?** 
+First we need to come up with a model for the data. We need to find the probability of each outcome first, before getting into the estimation for fairness. Let's ask a simple questions: **What are the possible outcomes of a coin toss?**
 
 _The answer is:_ (Head, tail) or (0,1) or (True, False) or (win, lose)
 
@@ -47,17 +49,17 @@ So, if we assume that the probability of getting 1 is $p$ and $p$ is not going t
 Let's say that we are going to toss the coins $N$ times and we get $n$ desired outcome. (e.g. **Head** is the desired outcome)
 
 
-But, what are the chances of getting $n$ out of $N$ coin tosses? 
+But, what are the chances of getting $n$ out of $N$ coin tosses?
 
 $n$ desired outcome probability is $p^n$; also we have $N-n$ undesired outcome during the experiment which means that the total probability of getting $n$ 1s and $N-n$ 0s is $p^n q^{N-n}$
 
 Also, we do not care about the **order** of the coin toss. (e.g. (1,0,0,0,1), (0,1,1,0,0), (1,1, 0, 0, 0) all are considered same outcome)
 So, we need to multiply the previous probability by number of configurations. (Number of ways you can choose $n$ ones, and $N-n$ zeros; which is:  $\binom {N}{n}$
 
-So the probability of the $n$ heads out of $N$ coin toss, when the probability of single **head** is $p$, is the following: 
+So the probability of the $n$ heads out of $N$ coin toss, when the probability of single **head** is $p$, is the following:
 
 \begin{equation}
-p(n|N,p)=\binom {N}{n} p^n (1-p)^{N-n} 
+p(n|N,p)=\binom {N}{n} p^n (1-p)^{N-n}
 \end{equation}
 
 Which is called the [**binomial distribution**](https://en.wikipedia.org/wiki/Binomial_distribution).
@@ -81,15 +83,15 @@ plt.rc('font', family='serif')
 def binomial(n=0, N=1, p=1):
     """
     This is the probability mass function for the binomial distribution.
-    
+
     INPUT:
             n: Number of desired outcome
             N: Number of trials
             p: Probability of a desired outcome for each separate coin toss
-            
+
     OUTPUT:
-            Probability of getting n desired outcome, out of N trials, 
-            when the probality of desired outcome is p 
+            Probability of getting n desired outcome, out of N trials,
+            when the probality of desired outcome is p
     """
     from math import factorial
     factor = factorial(N)/(factorial(n)*factorial(N-n))
@@ -115,7 +117,7 @@ from time import time
 
 ### **A simple for loop:**
 
-In the following cell, we are going to calculate the probability of getting all the values in the data-set, while using different $p$. Since, we can assume that the experiments are independent, we can simply multiply all the probabilities. Then looking for the $p$ value which maximize that probability; or in other words, is the most likely value for $p$ given our data-set. 
+In the following cell, we are going to calculate the probability of getting all the values in the data-set, while using different $p$. Since, we can assume that the experiments are independent, we can simply multiply all the probabilities. Then looking for the $p$ value which maximize that probability; or in other words, is the most likely value for $p$ given our data-set.
 
 You should notice that we are using the **Bayes' law** again; we are looking for $P(p|X)$ in which $X$ is the whole data-set. But, we can turn that around and look for much simpler quantity, using Bayes' law: $P(p|X) \sim P(X|p)$
 
@@ -136,7 +138,7 @@ tf=time()-ti
 print("For loop method for {} data points and {} simulations (sampling p) takes: {:10.3f} seconds ".format(len(data_array), number_of_points, tf))
 ```
 
-    For loop method for 100 data points and 100000 simulations (sampling p) takes:     24.183 seconds 
+    For loop method for 100 data points and 100000 simulations (sampling p) takes:     24.183 seconds
 
 
 This is the most likely value according to the description above.
@@ -173,11 +175,11 @@ for i,p in enumerate(prior_p):
     prob_p_cat[i] = np.prod(vec_binomial(data_array, N, p))
 tf=time()-ti
 
-    
+
 print("numpy.vectorize method for {} data points and {} simulations (sampling p) takes: {:10.3f} seconds ".format(len(data_array), number_of_points, tf))
 ```
 
-    numpy.vectorize method for 100 data points and 100000 simulations (sampling p) takes:     19.482 seconds 
+    numpy.vectorize method for 100 data points and 100000 simulations (sampling p) takes:     19.482 seconds
 
 
 
@@ -192,7 +194,7 @@ prior_p[prob_p_cat==max(prob_p_cat)]
 
 
 
-You can see that the numpy.vectorize method is a little bit **faster** than the simple for loop. 
+You can see that the numpy.vectorize method is a little bit **faster** than the simple for loop.
 
 
 ```python
@@ -200,7 +202,7 @@ fig_p = plt.figure(figsize=(8,8))
 
 # Just normalizing the probability to maximum value so most likely
 # value corresponds to 1.
-# For getting the through probability we need to find the Integral 
+# For getting the through probability we need to find the Integral
 # of the un-normalized distribution.
 
 plt.plot(prior_p, prob_p_cat/max(prob_p_cat),  markersize=1)
@@ -269,7 +271,7 @@ plt.show()
 ![png](week3_files/week3_26_0.png)
 
 
-So if we somehow manage to find the blue area we can find the numerical value for $\pi$. 
+So if we somehow manage to find the blue area we can find the numerical value for $\pi$.
 
 \begin{align*}
 & S = \frac{\pi R^2}{4} = \frac{\pi}{4} \quad \textrm{Since we know $R=1$} \\
@@ -280,7 +282,7 @@ So if we somehow manage to find the blue area we can find the numerical value fo
 
 First we need to get familiar with the [**Monte Carlo Simulations**](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
-The **Monte Carlo** simulations, is a statistical technique to model stochastic (or probabilistic) systems and to find the probability of different outcome. 
+The **Monte Carlo** simulations, is a statistical technique to model stochastic (or probabilistic) systems and to find the probability of different outcome.
 
 Further references:
 [http://mathworld.wolfram.com/MonteCarloMethod.html](http://mathworld.wolfram.com/MonteCarloMethod.html)
@@ -313,7 +315,7 @@ circle_points = distance_from_0_0[distance_from_0_0<=1]
 Now we have an array of distances for points inside the circle ($d((x,y), (0,0)) \leq 1$):
 
 If we define $n$ to be the number of points within circle, and $N$ to be total number of points,
-We can find the area to be: 
+We can find the area to be:
 
 \begin{equation*}
 S = \frac{n}{N}
@@ -331,7 +333,7 @@ print(PI)
 
 As you can see we are getting close to the **True value**.
 
-Let's put the above procedures inside a function: 
+Let's put the above procedures inside a function:
 
 
 ```python
@@ -345,11 +347,11 @@ def our_PI_generator(N=10e5):
     y = np.random.random(N)
     # Find the distance of (x,y) from [0,0]
     distance_from_0_0 = np.sqrt(x**2 + y**2)
-    # imposing the condition for the circle:  distance((x,y),(0,0))<= 0 
+    # imposing the condition for the circle:  distance((x,y),(0,0))<= 0
     circle_points = distance_from_0_0[distance_from_0_0<=1]
     return 4 * len(circle_points)/N
-    
-    
+
+
 ```
 
 
@@ -437,7 +439,7 @@ Let's put the selection criteria of the circle inside a function. (This can be g
 ```python
 def impose_circle(distances, radius=1):
     """
-    This is the function that takes an array `[distances]` 
+    This is the function that takes an array `[distances]`
     and a number (radius) and output an array of the similar
     size, and for those value<radius, assigns 1 and the rest 0
     """
@@ -445,7 +447,7 @@ def impose_circle(distances, radius=1):
         lenght_of_array = len(distances)
     except TypeError:
         lenght_of_array = 1
-        
+
     selector=np.zeros(lenght_of_array)
     for i in range(lenght_of_array):
         if distances[i]<=radius:
@@ -453,7 +455,7 @@ def impose_circle(distances, radius=1):
     return selector
 ```
 
-Now let's divide our points into two dictionaries: `inside_points` and `outside_points` 
+Now let's divide our points into two dictionaries: `inside_points` and `outside_points`
 
 
 ```python
@@ -472,7 +474,7 @@ outside_points["y"] = y[selector==0]
 ```python
 fig = plt.figure(figsize=(8,8))
 
-plt.plot(inside_points["x"], inside_points["y"], '.', markersize=2, 
+plt.plot(inside_points["x"], inside_points["y"], '.', markersize=2,
          label=r"$(x,y) | \sqrt{x^2+y^2} \leq 1 $")
 plt.plot(outside_points["x"], outside_points["y"], '.', markersize=2, label=r"$(x,y) | \sqrt{x^2+y^2} > 1 $")
 
@@ -689,20 +691,20 @@ def random_walk_1d(n, step=1):
     INPUT:
           n (int): number of steps to take
           step (float): lenght of each steps
-    
+
     OUTPUT:
-          positions (numpy.array): an array of different positions during 
+          positions (numpy.array): an array of different positions during
         the random walk
-         
+
     """
     import random
     import numpy as np
     # making an array for putting all the information
     positions=np.zeros(n)
-    
+
     # initial position
     x = positions[0]
-    
+
     for i in range(1,n):
         # choosing the random step to take
         dx = random.choice([1,-1])*step
@@ -730,7 +732,7 @@ Which has the solution of $x=-1$
 def min_finder(_f, xi=0, step=0.01, n=100):
     import random
     import numpy as np
-    
+
     positions=np.zeros(n)
     x = xi
     for i in range(1,n):
@@ -769,9 +771,9 @@ def random_walk_2d(n):
     """2-d random walk function
     INPUT:
          n (int): number of steps to take
-    
+
     OUTPUT:
-         positions_dic (dic): A dictionary which contains am array of x and y values and 
+         positions_dic (dic): A dictionary which contains am array of x and y values and
          the keys are "x" and "y"
     """
     x,y = 0, 0
@@ -831,7 +833,7 @@ Number_of_walks_in_each_simulation = 10000
 for i in range(Number_of_simulations):
     positions=random_walk_2d(Number_of_walks_in_each_simulation)
     distance[i]=np.sqrt(positions["x"][-1]**2+positions["y"][-1]**2)
-    
+
 ```
 
 
@@ -879,21 +881,21 @@ def Simulate_walks(number_of_steps, number_of_simulations):
     return simulation
 ```
 
-### Now let's make a random walker which can move along differnt angles. 
+### Now let's make a random walker which can move along differnt angles.
 
 
 ```python
 def random_walk_2d_degree_free(n):
     x,y = 0, 0
     degree=0
-    
+
     import random
     import numpy as np
-    
+
     positions_dic={}
     positions_dic["x"]=np.zeros(n)
     positions_dic["y"]=np.zeros(n)
-    
+
     for i in range(1, n):
         # Choose a degree in radian between [0, 2*pi] with 100000 choices for angles
         degree = random.choice(np.linspace(0, 2*np.pi, 100000))
@@ -945,29 +947,29 @@ First one is the posistion class which act as our position tracker and have few 
 class position(object):
     def __init__(self, x, y):
         """x,y are float type"""
-        # assigning the initial position 
+        # assigning the initial position
         self.x = x
         self.y = y
-    
+
     def move(self,dx,dy):
         """dx,dy are float type: function to make a new position object at the new coordinates moved by (dx, dy)"""
         return position(self.x+dx, self.y+dy)
-    
+
     def findX(self):
         """Give the x coordinate of the object"""
         return self.x
-    
+
     def findY(self):
         """Give the y coordinate of the object"""
         return self.y
-    
+
     def distance(self, other):
         """other is an object from position class: function will calculate their relative distance between self, and other"""
         delta_x = self.x - other.findX()
         delta_y = self.y - other.findY()
         return (delta_x**2+delta_y**2)**0.5
-    
-    
+
+
     def __str__(self):
         return "({},{})".format(self.x, self.y)
 ```
@@ -1016,7 +1018,7 @@ class walker(object):
     def __init__(self, name= None):
         """assume name is a string"""
         self.name = name
-    
+
     def __str__(self):
         if self.name != None:
             return self.name
@@ -1024,7 +1026,7 @@ class walker(object):
 ```
 
 ### Here we are going to make two types of walker:
-1. Normal walker: which has no preference for any directions. 
+1. Normal walker: which has no preference for any directions.
 2. Biased walker: which has some bias toward a particular direction. (in our case in y direction)
 
 
@@ -1043,7 +1045,7 @@ class Biased_walker(walker):
     def take_step(self):
         choices_of_steps = [(0,1.5), (1,0), (0,-0.5), (-1,0)]
         return random.choices(choices_of_steps)[0]
-    
+
 ```
 
  Notice that we have the same name for `take_step` methods under different sub-classes of `walker` which is different when the class is different.
@@ -1055,20 +1057,20 @@ class Biased_walker(walker):
 class Space(object):
     def __init__(self):
         self.walkers={}
-    
+
     def addWalker(self, walker, pos):
         """Takes a walker and position class and will add it to our dictionary of walkers, if the walker does not already exist"""
         if walker in self.walkers:
             raise ValueError("Walker already exist")
         else:
             self.walkers[walker]=pos
-            
+
     def getPos(self, walker):
         """Will take a walker class and give back the position class assigned to it"""
         if walker not in self.walkers:
             raise ValueError("No such Walker exist in our space!")
         return self.walkers[walker]
-    
+
     def moveWalker(self, walker):
         """Take a walker class and dependent on what subclass was chosen in defining the walker, takes step"""
         if walker not in self.walkers:
@@ -1076,8 +1078,8 @@ class Space(object):
         Delta_x, Delta_y = walker.take_step()
         # moving the walker to new position (class)
         self.walkers[walker] = self.walkers[walker].move(Delta_x, Delta_y)
-        
-        
+
+
 ```
 
 Now that we built up our `position`, `walker`, and `Space` we can make a random walk:
@@ -1091,21 +1093,21 @@ def walk(space, walker, number_of_steps, log_pos=False):
           space is from Space cls
           walker is from Walker cls
           number_of_steps is integer>=0
-    
+
     OUTPUT:
     -------
           IF log_pos == False:
-                        Function will produce the distance between starting 
-                        position of the walker and the last location. 
-                        
+                        Function will produce the distance between starting
+                        position of the walker and the last location.
+
           IF log_pass == True:
-                        Function will produce a list of all the positions 
+                        Function will produce a list of all the positions
                         walker was during the walk.           
-    
+
     """
     # Find the initial postion of the walker in the space
     starting_position = space.getPos(walker)
-    
+
     # Move the walker in the space
     save_all_pos = []
     for i in range(number_of_steps):
@@ -1124,14 +1126,14 @@ In the following we are going to define a function to perform severel random wal
 ```python
 def simulate_walks(number_of_steps, number_of_simulations, walker_class_type, origin=position(0,0)):
     """
-    This is function that runs simulation for given variables: 
-    
+    This is function that runs simulation for given variables:
+
     INPUT:
         number_of_steps: How many step the walker should take
         number_of_simulations: How many simulation to run
         walker_class_type: The type of walker class (a subclass of walker)
         origin: Should be an instance of the class position
-        
+
     Output:
         A list of distances from origins
     """
@@ -1146,7 +1148,7 @@ def simulate_walks(number_of_steps, number_of_simulations, walker_class_type, or
 
 def test_simulation(walk_lenght_array, number_of_simulations, walker_class_type):
     """
-    Some sanity checks on the simulations 
+    Some sanity checks on the simulations
     """
     for walk_lenght in walk_lenght_array:
         _distances_ = simulate_walks(walk_lenght, number_of_simulations, walker_class_type)
@@ -1210,7 +1212,7 @@ test_simulation([0,1,2, 10**3, 10**5], 100, Biased_walker)
      Min= 24292.8114
 
 
-The next function is going to run the simulation for both walker types, Notice that is general for any number of walker types, here we only defined two but can be extended as well. 
+The next function is going to run the simulation for both walker types, Notice that is general for any number of walker types, here we only defined two but can be extended as well.
 
 
 ```python
@@ -1251,7 +1253,7 @@ Here we are running the simulation at will find the average of different simulat
 
 
 ```python
-from time import time 
+from time import time
 
 number_of_simulations=100
 number_of_steps_range=300
@@ -1291,9 +1293,9 @@ plt.show()
 ![png](week3_files/week3_121_0.png)
 
 
-Which as you can see, when you add a bias to your random walk is going to make the average distance to scale with Number of steps instead of square root of the number of steps which is the case for normal walker. 
+Which as you can see, when you add a bias to your random walk is going to make the average distance to scale with Number of steps instead of square root of the number of steps which is the case for normal walker.
 
-# Monte Carlo simulation for roulette game: 
+# Monte Carlo simulation for roulette game:
 
 ### Here is a picture of a roulette game: (for more info check out the [wikipedia](https://en.wikipedia.org/wiki/Roulette))
 
@@ -1325,16 +1327,16 @@ class Fair_roulette:
             self.pockets.append(i)
         self.ball = None
         self.pocket_odds = len(self.pockets) - 1
-    
+
     def spin(self):
         self.ball = random.choice(self.pockets)
-    
+
     def bet_pocket(self, pocket, money_amount):
         if str(pocket) == str(self.ball):
             return money_amount*self.pocket_odds
         else:
             return -money_amount
-    
+
     def __str__(self):
         return "Fair Roulette"
 ```
@@ -1366,46 +1368,46 @@ list_of_spins = [10, 100, 1000, 10000, 100000, 10**6]
 for spins_num in list_of_spins:
     for _ in range(2):
         play_roulette(our_game, spins_num, which_pocket_to_bet, bet_amount)
-    
-    
+
+
 ```
 
     10  spins of the  Fair Roulette
-    Expected return for  7 is  620.0% 
-    
+    Expected return for  7 is  620.0%
+
     10  spins of the  Fair Roulette
-    Expected return for  7 is  260.0% 
-    
+    Expected return for  7 is  260.0%
+
     100  spins of the  Fair Roulette
-    Expected return for  7 is  -64.0% 
-    
+    Expected return for  7 is  -64.0%
+
     100  spins of the  Fair Roulette
-    Expected return for  7 is  -28.000000000000004% 
-    
+    Expected return for  7 is  -28.000000000000004%
+
     1000  spins of the  Fair Roulette
-    Expected return for  7 is  -2.8000000000000003% 
-    
+    Expected return for  7 is  -2.8000000000000003%
+
     1000  spins of the  Fair Roulette
-    Expected return for  7 is  8.0% 
-    
+    Expected return for  7 is  8.0%
+
     10000  spins of the  Fair Roulette
-    Expected return for  7 is  -10.72% 
-    
+    Expected return for  7 is  -10.72%
+
     10000  spins of the  Fair Roulette
-    Expected return for  7 is  1.52% 
-    
+    Expected return for  7 is  1.52%
+
     100000  spins of the  Fair Roulette
-    Expected return for  7 is  2.42% 
-    
+    Expected return for  7 is  2.42%
+
     100000  spins of the  Fair Roulette
-    Expected return for  7 is  0.5479999999999999% 
-    
+    Expected return for  7 is  0.5479999999999999%
+
     1000000  spins of the  Fair Roulette
-    Expected return for  7 is  0.5228% 
-    
+    Expected return for  7 is  0.5228%
+
     1000000  spins of the  Fair Roulette
-    Expected return for  7 is  1.3004% 
-    
+    Expected return for  7 is  1.3004%
+
 
 
 As you can see the variations for the money we take is huge when the number of spins are low, but when we get to  $n>10^5$ simulations our results is fairly close to zero which it is a god news since it means our game is fair.
@@ -1419,16 +1421,16 @@ class European_roulette(Fair_roulette):
     def __init__(self):
         Fair_roulette.__init__(self)
         self.pockets.append("0")
-    
+
     def __str__(self):
         return "European Roulette"
-    
-    
+
+
 class American_roulette(European_roulette):
     def __init__(self):
         European_roulette.__init__(self)
         self.pockets.append("00")
-        
+
     def __str__(self):
         return "American Roulette"
 ```
@@ -1448,70 +1450,74 @@ for game in our_games:
     for spins_num in list_of_spins:
         for _ in range(2):
             play_roulette(game, spins_num, which_pocket_to_bet, bet_amount)
-    
-    
+
+
 ```
 
     10  spins of the  Fair Roulette
-    Expected return for  2 is  -100.0% 
-    
+    Expected return for  2 is  -100.0%
+
     10  spins of the  Fair Roulette
-    Expected return for  2 is  -100.0% 
-    
+    Expected return for  2 is  -100.0%
+
     100  spins of the  Fair Roulette
-    Expected return for  2 is  -28.000000000000004% 
-    
+    Expected return for  2 is  -28.000000000000004%
+
     100  spins of the  Fair Roulette
-    Expected return for  2 is  8.0% 
-    
+    Expected return for  2 is  8.0%
+
     1000000  spins of the  Fair Roulette
-    Expected return for  2 is  -0.3664% 
-    
+    Expected return for  2 is  -0.3664%
+
     1000000  spins of the  Fair Roulette
-    Expected return for  2 is  -0.6904% 
-    
+    Expected return for  2 is  -0.6904%
+
     10  spins of the  European Roulette
-    Expected return for  2 is  -100.0% 
-    
+    Expected return for  2 is  -100.0%
+
     10  spins of the  European Roulette
-    Expected return for  2 is  -100.0% 
-    
+    Expected return for  2 is  -100.0%
+
     100  spins of the  European Roulette
-    Expected return for  2 is  8.0% 
-    
+    Expected return for  2 is  8.0%
+
     100  spins of the  European Roulette
-    Expected return for  2 is  -28.000000000000004% 
-    
+    Expected return for  2 is  -28.000000000000004%
+
     1000000  spins of the  European Roulette
-    Expected return for  2 is  -2.4903999999999997% 
-    
+    Expected return for  2 is  -2.4903999999999997%
+
     1000000  spins of the  European Roulette
-    Expected return for  2 is  -2.7567999999999997% 
-    
+    Expected return for  2 is  -2.7567999999999997%
+
     10  spins of the  American Roulette
-    Expected return for  2 is  -100.0% 
-    
+    Expected return for  2 is  -100.0%
+
     10  spins of the  American Roulette
-    Expected return for  2 is  -100.0% 
-    
+    Expected return for  2 is  -100.0%
+
     100  spins of the  American Roulette
-    Expected return for  2 is  -64.0% 
-    
+    Expected return for  2 is  -64.0%
+
     100  spins of the  American Roulette
-    Expected return for  2 is  115.99999999999999% 
-    
+    Expected return for  2 is  115.99999999999999%
+
     1000000  spins of the  American Roulette
-    Expected return for  2 is  -4.4704% 
-    
+    Expected return for  2 is  -4.4704%
+
     1000000  spins of the  American Roulette
-    Expected return for  2 is  -4.5856% 
-    
+    Expected return for  2 is  -4.5856%
+
 
 
 As you can see for samll number of spins we still have a huge variations between different runs for **all versions** of the game. But the story is different for the large numbers! In the European version you are losing by about 2-3 percent and in the American version you are losing 4-5 percent on average.
 
-So now you know how casino can make money out of this game, since they are not interested in averege of the money they win/lose in small number of spins, instead they are making money on the long run. 
+So now you know how casino can make money out of this game, since they are not interested in averege of the money they win/lose in small number of spins, instead they are making money on the long run.
 
 
 
 **The other interesting thing about the experiment is that if you decide to gamble with roulette for only few spins you can get lucky few times since the variation of the expected value is large, but don't plan to make money in this way since you are going to lose to casino in the long run!**
+
+
+
+### [**<<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)

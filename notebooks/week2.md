@@ -19,6 +19,10 @@ location: "Riverside, USA"
 
 ### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
 
+### [**<<< Go to Week 1**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1)
+### [**<<< Go to Week 3**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week3)
+
+
 
 <hr>
 # **Week 2**
@@ -256,3 +260,9 @@ two_gaussian(mass_cms, mass_atlas, mass_err_cms, mass_err_atlas)
 
 
 ### **Which as you can see agrees with our result from the sampling method.**
+
+
+
+### [**>>> Go to Week 3**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week3)
+
+### [**<<< Go to Week 1**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
