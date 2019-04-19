@@ -73,7 +73,7 @@ So, we need to multiply the previous probability by number of configurations. (N
 So the probability of the $n$ heads out of $N$ coin toss, when the probability of single **head** is $p$, is the following:
 $$
 \begin{equation}
-p(n|N,p)=\binom {N}{n} p^n (1-p)^{N-n}
+p(n\|N,p)=\binom {N}{n} p^n (1-p)^{N-n}
 \end{equation}
 $$
 Which is called the [**binomial distribution**](https://en.wikipedia.org/wiki/Binomial_distribution).
@@ -601,7 +601,7 @@ _outside_points["y"] = y[final_sel==0]
 fig = plt.figure(figsize=(8,8))
 
 plt.plot(_inside_points["x"], _inside_points["y"], '.', markersize=2, label=r"$(x,y) | \sqrt{x^2+y^2} \leq 1$ and $\sqrt{(x-1)^2+(y-1)^2} \leq 1$")
-plt.plot(_outside_points["x"], _outside_points["y"], '.', markersize=2, label=r"$(x,y) | \sqrt{x^2+y^2} > 1 $ and $\sqrt{(x-1)^2+(y-1)^2} > 1$")
+plt.plot(_outside_points["x"], _outside_points["y"], '.', markersize=2, label=r"$(x,y) | \sqrt{x^2+y^2} > 1 $ or $\sqrt{(x-1)^2+(y-1)^2} > 1$")
 
 plt.title(r"\textbf{Monte Carlo simulation}", fontsize=22)
 
