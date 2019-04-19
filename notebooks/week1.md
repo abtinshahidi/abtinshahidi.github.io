@@ -18,7 +18,7 @@ location: "Riverside, USA"
 ### Teaching Assistance: [**Abtin Shahidi**](https://abtinshahidi.github.io/) email *abtin.shahidi--at--email.ucr.edu*
 
 
-### [**>>> Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
+### [**Go to Week 2 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
 
 <br/>
 
@@ -1251,4 +1251,4 @@ plt.show()
 
 
 
-### [**>>> Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
+### [**Go to Week 2 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
