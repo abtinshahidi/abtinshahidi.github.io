@@ -19,7 +19,7 @@ location: "Riverside, USA"
 
 ### Course webpage: [https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning)
 
-### [**<<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
+### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
 
 
 
@@ -1532,4 +1532,4 @@ So now you know how casino can make money out of this game, since they are not i
 
 
 
-### [**<<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
+### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
