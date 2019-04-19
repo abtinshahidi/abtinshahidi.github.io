@@ -133,7 +133,7 @@ from time import time
 
 In the following cell, we are going to calculate the probability of getting all the values in the data-set, while using different $p$. Since, we can assume that the experiments are independent, we can simply multiply all the probabilities. Then looking for the $p$ value which maximize that probability; or in other words, is the most likely value for $p$ given our data-set.
 
-You should notice that we are using the **Bayes' law** again; we are looking for $P(p|X)$ in which $X$ is the whole data-set. But, we can turn that around and look for much simpler quantity, using Bayes' law: $P(p|X) \sim P(X|p)$
+You should notice that we are using the **Bayes' law** again; we are looking for $P(p\|X)$ in which $X$ is the whole data-set. But, we can turn that around and look for much simpler quantity, using Bayes' law: $P(p\|X) \sim P(X\|p)$
 
 
 ```python
@@ -234,7 +234,7 @@ plt.show()
 ![png](week3_files/week3_22_0.png)
 
 
-As you can see from our experiment we found the distribution of the interest: $P(p|X)$
+As you can see from our experiment we found the distribution of the interest: $P(p\|X)$
 
 ### _**Result:**_
 
