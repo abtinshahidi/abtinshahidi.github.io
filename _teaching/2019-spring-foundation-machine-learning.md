@@ -46,6 +46,8 @@ Videos are accessible in the iLearn under section(002)
 [Week 2](https://abtinshahidi.github.io/files/week2.pdf)
 
 
+[Week 3](https://abtinshahidi.github.io/files/week3.pdf)
+
 <!-- ## Projects: -->
 
 
