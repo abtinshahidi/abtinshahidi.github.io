@@ -25,11 +25,11 @@ Videos are accessible in the iLearn under section(002)
 
 
 ## Courses:
-[Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1)  
+* [Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1)  
 
-[Week 2: Statistics](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)  
+* [Week 2: Statistics](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)  
 
-[Week 3: More Statistics + Monte Carlo Simulation](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week3)
+* [Week 3: More Statistics + Monte Carlo Simulation](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week3)
 
 ## Lectures:
 [Lecture 1](https://abtinshahidi.github.io/files/lecture1.pdf)
@@ -37,16 +37,18 @@ Videos are accessible in the iLearn under section(002)
 [Lecture 3](https://abtinshahidi.github.io/files/lecture3.pdf)
 [Lecture 4](https://abtinshahidi.github.io/files/lecture4.pdf)
 [Lecture 5](https://abtinshahidi.github.io/files/lecture5.pdf)
-
+[Lecture 6](https://abtinshahidi.github.io/files/lecture6.pdf)
+[Lecture 7](https://abtinshahidi.github.io/files/lecture7.pdf)
+[Lecture 8](https://abtinshahidi.github.io/files/lecture8.pptx)
 
 ## Assignments:
-[Week 1](https://abtinshahidi.github.io/files/week1.pdf)
+* [Week 1](https://abtinshahidi.github.io/files/week1.pdf)
 
 
-[Week 2](https://abtinshahidi.github.io/files/week2.pdf)
+* [Week 2](https://abtinshahidi.github.io/files/week2.pdf)
 
 
-[Week 3](https://abtinshahidi.github.io/files/week3.pdf)
+* [Week 3](https://abtinshahidi.github.io/files/week3.pdf)
 
 <!-- ## Projects: -->
 

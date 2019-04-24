@@ -781,7 +781,7 @@ min_finder(f, n=100)[-1]
 
 
 
-### Now let's go to 2-d case: 2-d random walk
+### Now let's go to 2-d random walk:
 
 
 
@@ -957,10 +957,10 @@ plt.show()
 ![png](week3_files/week3_96_0.png)
 
 
-# Let's implement the random walk in a object-oriented method:
+# Let's implement the random walk in a object-oriented framework:
 
 ### First we need to define few classes:
-First one is the position class which act as our position tracker and have few methods: `move`, `findX`, `findY`, and `distance`
+First one is the `position` class which act as our position tracker and have few methods: `move`, `findX`, `findY`, and `distance`
 
 
 ```python
