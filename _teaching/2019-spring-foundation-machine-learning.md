@@ -31,6 +31,10 @@ Videos are accessible in the iLearn under section(002)
 
 * [Week 3: More Statistics + Monte Carlo Simulation](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week3)
 
+
+* [Week 4: More Statistics + Confidence interval](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)
+
+
 ## Lectures:
 [Lecture 1](https://abtinshahidi.github.io/files/lecture1.pdf)
 [Lecture 2](https://abtinshahidi.github.io/files/lecture2.pdf)
@@ -58,5 +62,5 @@ Videos are accessible in the iLearn under section(002)
 * [Numpy](https://abtinshahidi.github.io/files/numpy-cheatsheet.pdf)
 * [matplotlib](https://abtinshahidi.github.io/files/matplotlib-cheatsheet.pdf)
 * [Jupyter notebook](https://abtinshahidi.github.io/files/notebook-cheatsheet.pdf)
-
+* [Scipy]
 <!-- # Related materials: -->
