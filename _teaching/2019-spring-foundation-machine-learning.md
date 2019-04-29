@@ -62,5 +62,4 @@ Videos are accessible in the iLearn under section(002)
 * [Numpy](https://abtinshahidi.github.io/files/numpy-cheatsheet.pdf)
 * [matplotlib](https://abtinshahidi.github.io/files/matplotlib-cheatsheet.pdf)
 * [Jupyter notebook](https://abtinshahidi.github.io/files/notebook-cheatsheet.pdf)
-* [Scipy]
 <!-- # Related materials: -->
