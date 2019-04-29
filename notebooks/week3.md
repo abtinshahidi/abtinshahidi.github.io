@@ -22,6 +22,10 @@ location: "Riverside, USA"
 
 ### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)  
 
+
+### [**Go to Week 4 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)
+
+
 <br>
 
 # **Week 3**
@@ -1538,10 +1542,10 @@ So now you know how casino can make money out of this game, since they are not i
 
 **The other interesting thing about the experiment is that if you decide to gamble with roulette for only few spins you can get lucky few times since the variation of the expected value is large, but don't plan to make money in this way since you are going to lose to casino in the long run!**
 
+### [**Go to Week 4 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)
 
 
 ### [**<< Go to Week 2**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week2)
-
 
 
 ### References:
