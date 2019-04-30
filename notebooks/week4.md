@@ -898,9 +898,9 @@ $$
 So we can form these set by inputting our data:
 
 $$
-\begin{align*}
+\begin{equation*}
 a_0  = 0 \qquad & a_1 + a_2 = 2 \qquad   4 a_2 + 2 a_1= 3
-\end{align*}
+\end{equation*}
 $$
 
 Which leads to:
@@ -909,7 +909,7 @@ Which leads to:
 $$
 \begin{equation*}
 a_0  = 0 \quad   a_1= \frac{5}{2}  \quad a_2 = -\frac{1}{2}  
-\end{equation**}
+\end{equation*}
 $$
 
 
