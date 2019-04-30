@@ -756,7 +756,7 @@ plt.show()
 ![png](week4_files/week4_64_0.png)
 
 
-### Let's find a measure which accounts for how much of the **variablity of the measured data** has been included in our **model**.
+### Let's find a measure which accounts for how much of the **variability of the measured data** has been included in our **model**.
 
 This is called **coefficient of determination**:
 
@@ -777,20 +777,20 @@ def R_squared(measured, prediction, mean_squared=False):
     """
     R^2 function:
 
-    What portion of the variablitiy in the data is captured
+    What portion of the variability in the data is captured
     you are using is accurately predicting the observed data.
 
-    BEWRARE:
+    BEWARE:
             This is not a measure for being the true model
             since you can always get a polynomial of order n
             to fit your n data point perfectly no matter the
             value of the data points.
 
-            So you should beware of overfitting data by adding
-            unneccessary parameters into our model.
+            So you should beware of over-fitting data by adding
+            unnecessary parameters into our model.
 
     INPUT:
-            * measured (list, numpy.array): contains emperical data
+            * measured (list, numpy.array): contains empirical data
             * prediction (list, numpy.array): contains prediction
             from your model.
 
@@ -899,7 +899,7 @@ So we can form these set by inputting our data:
 
 $$
 \begin{align*}
-& a_0  = 0 \\ & a_1 + a_2 = 2 \\ &  4 a_2 + 2 a_1= 3
+a_0  = 0 \qquad & a_1 + a_2 = 2 \qquad   4 a_2 + 2 a_1= 3
 \end{align*}
 $$
 
@@ -907,13 +907,13 @@ Which leads to:
 
 
 $$
-\begin{align*}
-& a_0  = 0 \\ &  a_1= \frac{5}{2} \\ & a_2 = -\frac{1}{2}  
-\end{align*}
+\begin{equation*}
+a_0  = 0 \quad   a_1= \frac{5}{2}  \quad a_2 = -\frac{1}{2}  
+\end{equation**}
 $$
 
 
-So the following polynomial is going to be the "perfect" fit. But you can guess something is not right. Since we are adding extra complexity to our models which is not neccessarily gives us the right direction to go for finding the **"true"** underlying model which can be quite simple and because of the random errors we see more data variablity. So there is this trade off which you should consider whenever you add more complexity and this case increasing the degree of polynomials to better fit the data.
+So the following polynomial is going to be the "perfect" fit. But you can guess something is not right. Since we are adding extra complexity to our models which is not necessarily gives us the right direction to go for finding the **"true"** underlying model which can be quite simple and because of the random errors we see more data variability. So there is this trade off which you should consider whenever you add more complexity and this case increasing the degree of polynomials to better fit the data.
 
 
 This is our model function that perfectly predict the given values:
