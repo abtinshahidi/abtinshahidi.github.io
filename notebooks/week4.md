@@ -34,7 +34,7 @@ location: "Riverside, USA"
 
 ### In the following exercise we are going to learn how to find a confidence interval for the parameter estimations we learned in the past few weeks:  
 
-Let's look at the following Normal distrubution:
+Let's look at the following Normal distribution:
 
 
 $$
@@ -50,7 +50,7 @@ def Gaussian(x, mu=0, sigma=1):
     return (1/sqrt(2*pi*sigma**2)*exp(-(x-mu)**2/(2*sigma**2)))
 ```
 
-We can generate a random number from this ditributions using `random` package:
+We can generate a random number from this distributions using `random` package:
 
 
 ```python
@@ -155,7 +155,7 @@ print(r"Fraction of points inside [μ-2σ, μ+2σ] is:", len(points_inside)/numb
     Fraction of points inside [μ-2σ, μ+2σ] is: 0.954603
 
 
-As we saw in the examples above about 68% of the points sampled from a gaussian distributions fall within 1 $\sigma$ of the mean ($\mu$) and about 95% fall within the $2\sigma$.
+As we saw in the examples above about 68% of the points sampled from a Gaussian distributions fall within 1 $\sigma$ of the mean ($\mu$) and about 95% fall within the $2\sigma$.
 
 ### Let's use another useful library: [scipy]()
 
@@ -253,9 +253,9 @@ find_confidence(2,[1,2,3,4,5])
 
 
 
-### *Additional*
+## *Additional*
 
-#### Let's find the [Cumulative distribution function (cdf)](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for a given pdf:
+### Let's find the [Cumulative distribution function (cdf)](https://en.wikipedia.org/wiki/Cumulative_distribution_function) for a given pdf:
 
 This is a uniform pdf:
 
@@ -287,7 +287,7 @@ plt.show()
 ![png](week4_files/week4_27_0.png)
 
 
-In the following we first define a function that takes integral: (not optimized much better to use buit-in funcrions)
+In the following we first define a function that takes integral: (not optimized much better to use buit-in functions)
 
 
 ```python
@@ -597,7 +597,7 @@ plt.show()
 ![png](week4_files/week4_54_0.png)
 
 
-### Let's fit the linear model first:
+### Let's fit the linear model first, then we can move on to the higher orders.
 
 
 ```python
@@ -639,7 +639,7 @@ plt.show()
 
 
 ### Fitting second order polynomial
-Now let's use the exact same grid search algorithm for the second order polynomial
+Now let's use the exact same grid search algorithm for the second order polynomial.
 
 
 ```python
@@ -756,7 +756,7 @@ plt.show()
 ![png](week4_files/week4_64_0.png)
 
 
-#### Let's find a measure which accounts for how much of the **variablity of the measured data** has been included in our **model**.
+### Let's find a measure which accounts for how much of the **variablity of the measured data** has been included in our **model**.
 
 This is called **coefficient of determination**:
 
@@ -868,15 +868,12 @@ plt.ylabel(r"Y axis", fontsize=17)
 plt.show()
 ```
 
-    /home/abtin/Documents/my_virt_envs/phys_py3/lib/python3.7/site-packages/ipykernel_launcher.py:4: RankWarning: Polyfit may be poorly conditioned
-      after removing the cwd from sys.path.
-
 
 
 ![png](week4_files/week4_70_1.png)
 
 
-As you can see by adding more parameters to our paramater space our fit gets better and better in including variablity in our data.
+As you can see by adding more parameters to our parameter space our fit gets better and better in including variability in our data.
 
 However, this **does not** mean that we have a better model. For seeing why, just imagine any given set of data points $\{(x,y)\}$. ($n+1$ data points) My argument is that I can solve for the coefficient of the following polynomial (given our data) which will force the polynomial to go through all of the given data points, in other words it has $R^2=1$:
 
@@ -898,25 +895,21 @@ y = P(x) = a_2 x^2+a_1 x + a_0
 \end{equation*}
 $$
 
-So we can form these set by inputing our data:
+So we can form these set by inputting our data:
 
 $$
-\begin{equation*}
-\begin{array}{lcl}
+\begin{align*}
 & a_0  = 0 \\ & a_1 + a_2 = 2 \\ &  4 a_2 + 2 a_1= 3
-\end{array}
-\end{equation*}
+\end{align*}
 $$
 
 Which leads to:
 
 
 $$
-\begin{equation*}
-\begin{array}{lcl}
+\begin{align*}
 & a_0  = 0 \\ &  a_1= \frac{5}{2} \\ & a_2 = -\frac{1}{2}  
-\end{array}
-\end{equation*}
+\end{align*}
 $$
 
 
