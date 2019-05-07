@@ -1718,6 +1718,7 @@ As you can see our implementation performance is fairly close to the performance
 ### [**<< Go to Week 4**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)  
 
 
+<br>
 # References:
 
 
