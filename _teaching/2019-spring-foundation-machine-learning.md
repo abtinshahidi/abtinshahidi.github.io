@@ -35,6 +35,9 @@ Videos are accessible in the iLearn under section(002)
 * [Week 4: More Statistics + Confidence interval](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)
 
 
+* [Week 5: Machine Learning: Clustering and Classification](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week5)
+
+
 ## Lectures:
 [Lecture 1](https://abtinshahidi.github.io/files/lecture1.pdf)
 [Lecture 2](https://abtinshahidi.github.io/files/lecture2.pdf)
@@ -53,6 +56,9 @@ Videos are accessible in the iLearn under section(002)
 
 
 * [Week 3](https://abtinshahidi.github.io/files/week3.pdf)
+
+
+* [Midterm projects](https://abtinshahidi.github.io/files/projects.pdf) and [datasets zip file](https://abtinshahidi.github.io/files/Full_datasets.zip)
 
 <!-- ## Projects: -->
 
