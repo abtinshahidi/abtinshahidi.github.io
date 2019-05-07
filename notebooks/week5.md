@@ -987,7 +987,7 @@ _data_ = []
 
 for d_line in data_lines:
 
-    # seperating the words (strings) by comma ","
+    # separating the words (strings) by comma ","
     _line_ = d_line.split(",")
 
     # reading the data and turning them into their correct types
@@ -1042,13 +1042,13 @@ for i, _d_ in enumerate(_data_[:-1]):
     original_data_points.append(_p_)
 ```
 
-Now we have our data in form of a list of `Point` objects. But before looking at the data set let's devide the dataset into trainging and test set. We should do this to avoid overfitting or creating bias toward a particular model without having evidence.
+Now we have our data in form of a list of `Point` objects. But before looking at the data set let's divide the dataset into training and test set. We should do this to avoid over-fitting or creating bias toward a particular model without having evidence.
 
 
 ```python
-def devide_dataset(_data_, training_fraction = 0.8, seed = random.randint(1,100000)):
+def divide_dataset(_data_, training_fraction = 0.8, seed = random.randint(1,100000)):
     """
-    This is a general function to devide a given dataset into
+    This is a general function to divide a given dataset into
     training set and test set.
 
 
@@ -1086,7 +1086,7 @@ def devide_dataset(_data_, training_fraction = 0.8, seed = random.randint(1,1000
 
 
 ```python
-data_points, test_dataset = devide_dataset(original_data_points, training_fraction=0.8, seed = 1000)
+data_points, test_dataset = divide_dataset(original_data_points, training_fraction=0.8, seed = 1000)
 ```
 
 
