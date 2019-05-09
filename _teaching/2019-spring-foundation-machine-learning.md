@@ -24,6 +24,8 @@ Videos are accessible in the iLearn under section(002)
 [Syllabus](https://abtinshahidi.github.io/files/Syllabus.pdf)
 
 
+[Time table for the rest of the quarter](https://abtinshahidi.github.io/files/ML_time_table.pdf)
+
 ## Courses:
 * [Week 1: Python 3](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week1)  
 
