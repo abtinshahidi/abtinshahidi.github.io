@@ -22,6 +22,7 @@ location: "Riverside, USA"
 
 ### [**<< Go to Week 4**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)  
 
+### [**Go to Week 6 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week6)  
 
 <br>
 
@@ -1717,6 +1718,8 @@ As you can see our implementation performance is fairly close to the performance
 
 ### [**<< Go to Week 4**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week4)  
 
+
+### [**Go to Week 6 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week6)
 
 <br>
 # References:

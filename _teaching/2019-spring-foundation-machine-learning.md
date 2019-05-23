@@ -40,6 +40,9 @@ Videos are accessible in the iLearn under section(002)
 * [Week 5: Machine Learning: Clustering and Classification](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week5)
 
 
+* [Week 6: Machine Learning: Regression, Gradient Descent, Decision Trees](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week6)
+
+
 ## Lectures:
 [Lecture 1](https://abtinshahidi.github.io/files/lecture1.pdf)
 [Lecture 2](https://abtinshahidi.github.io/files/lecture2.pdf)
