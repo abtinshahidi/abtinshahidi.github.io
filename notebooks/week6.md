@@ -60,16 +60,16 @@ Our approximation function $g$ is called hypothesis. And our task is to find the
 
 ### Test set:
 
-The way we can make sure that we are on the right track and to monitor our hypothesis performance we separate the original data set into trainging and test sets in a random manner. Basically, we make sure that we have two distinct sets of examples.
+The way we can make sure that we are on the right track and to monitor our hypothesis performance we separate the original data set into training and test sets in a random manner. Basically, we make sure that we have two distinct sets of examples.
 
 
-So we are trying to learn from the training data to come up with the "best" hypothesis. We do not required $f$ to be deterministic. So we can even learn from the stochastic function by coming up with the $p(y|\vec{x})$.
+So we are trying to learn from the training data to come up with the "best" hypothesis. We do not required $f$ to be deterministic. So we can even learn from the stochastic function by coming up with the $p(y\|\vec{x})$.
 
 
 When we have a finite set of values for $y$ the call the learning problem **classification** and it is also known as Boolean or binary classification when we have only **two** possible outcomes.
 
 
-But when we are dealing with a real-valued numbers we call the learning problem **regression**. And we are not trying to find the "real" value of $y$, we are only interested in a conditional expectation of $y$ or $p(y|\vec{x})$.
+But when we are dealing with a real-valued numbers we call the learning problem **regression**. And we are not trying to find the "real" value of $y$, we are only interested in a conditional expectation of $y$ or $p(y\|\vec{x})$.
 
 We have already saw an example for both, fitting curve for regression and K-nearest neighbors for classification.
 
