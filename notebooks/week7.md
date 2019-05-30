@@ -2045,6 +2045,8 @@ $$
 In which $K$ is the $n\times n$ matrix form by elements of $K_{i,j} = K(X_i, X_j)$ is the kernel matrix.
 
 For the $\psi$ mentioned we have:
+
+
 $$
 \begin{equation*}
 \langle\psi(X_i),\psi(X_j)\rangle = 1 + \langle X_i, X_j \rangle +\langle X_i, X_j\rangle^2 + \dots + \langle X_i, X_j \rangle^p
