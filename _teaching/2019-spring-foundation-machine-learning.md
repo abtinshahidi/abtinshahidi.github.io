@@ -43,6 +43,10 @@ Videos are accessible in the iLearn under section(002)
 * [Week 6: Machine Learning: Regression, Gradient Descent, Decision Trees](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week6)
 
 
+* [Week 7: Machine Learning: Decision Trees, Random Forests, Support Vector Machine](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week7)
+
+
+
 ## Lectures:
 [Lecture 1](https://abtinshahidi.github.io/files/lecture1.pdf)
 [Lecture 2](https://abtinshahidi.github.io/files/lecture2.pdf)
@@ -57,7 +61,10 @@ Videos are accessible in the iLearn under section(002)
 [Lecture 10](https://abtinshahidi.github.io/files/lecture10.pdf)
 [Lecture 11](https://abtinshahidi.github.io/files/lecture11.pdf)
 [Lecture 12](https://abtinshahidi.github.io/files/lecture12.pdf)
-
+[Lecture 13](https://abtinshahidi.github.io/files/lecture13.pdf)
+[Lecture 14](https://abtinshahidi.github.io/files/lecture14.pdf)
+[Lecture 15](https://abtinshahidi.github.io/files/lecture15.pdf)
+[Lecture 16](https://abtinshahidi.github.io/files/lecture16.pdf)
 
 ## Assignments:
 * [Week 1](https://abtinshahidi.github.io/files/week1.pdf)
@@ -71,6 +78,10 @@ Videos are accessible in the iLearn under section(002)
 
 * [Midterm projects](https://abtinshahidi.github.io/files/projects.pdf) and [datasets zip file](https://abtinshahidi.github.io/files/Full_datasets.zip)
 
+
+* [Week 4](https://abtinshahidi.github.io/files/week4.pdf)
+
+* [Week 5](https://abtinshahidi.github.io/files/week3.pdf) and [datasets zip file](https://abtinshahidi.github.io/files/adult.zip)
 <!-- ## Projects: -->
 
 

@@ -15,6 +15,8 @@ location: "Riverside, USA"
 
 ### [**<<Go to Week 5**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week5)
 
+### [**Go to Week 7 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week7)
+
 <br>
 
 # **The Foundation of Applied Machine Learning**
@@ -2420,4 +2422,7 @@ plt.show()
 ![png](week6_files/week6_158_0.png)
 
 
+
 ### [**<<Go to Week 5**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week5)
+
+### [**Go to Week 7 >>**](https://abtinshahidi.github.io/teaching/2019-spring-foundation-machine-learning/week7)
