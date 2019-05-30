@@ -1853,6 +1853,8 @@ But first let's talk about a more general class of **Pattern Analysis** called *
 
 
 Let's go back to our method to find a polynomial fit (order $p$), or more generally when the linear model is insufficient on capturing all the useful patterns in our data:
+
+
 $$
 \begin{equation*}
 y = \sum_{i=0}^p w_i x^i
@@ -1897,6 +1899,8 @@ $$
 $$
 
 Now it will become:
+
+
 $$
 \begin{equation*}
 \frac{\partial L_2}{\partial w_i} = \frac{2}{N} \sum_{j=1}^N (\vec{\psi}(X_j).\vec{w} - y_j) \psi(X_{j,i})\\
@@ -1911,6 +1915,8 @@ $$
 $$
 
 And $\vec{\psi}(X_{j})$ simply means:
+
+
 $$
 \begin{equation*}
 \vec{\psi}(X_{j}) =
@@ -1927,6 +1933,8 @@ And it belongs to $\mathbb{R}^q$
 
 This is the update based on the entire data set (Batch gradient descent), we can redefine the the update for stochastic gradient descent which was: (Here we have $\vec{w} \in \mathbb{R}^n$)
 
+
+
 $$
 \begin{equation*}
 \vec{w}_{next} = \vec{w} - \eta \nabla_{w}{L_2(X_j, y_j, \vec{w})}
@@ -1934,6 +1942,8 @@ $$
 $$
 
 Into:
+
+
 $$
 \begin{equation*}
 \vec{w}_{next} = \vec{w} - \eta \nabla_{w}{L_2(\vec{\psi}(X_j), y_j, \vec{w})}
@@ -1941,6 +1951,7 @@ $$
 $$
 
 In which $\vec{w} \in \mathbb{R}^q$. If we are using a feature map of order $p$ and if we consider all the monomials of $X_j$ we are going to have a $\psi$ that look like this:
+
 
 $$
 \begin{equation*}
@@ -1963,6 +1974,7 @@ X_{j,1}^2 X_{j,3}\\
 $$
 
 If we count them we have $1$, $0^{th}$ order term, we have $n$, $1^{th}$ order terms, $\binom{n+2-1}{2}$, $2^{th}$ order terms and so on: (Using the famous [star and bar argument](https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics)))
+
 
 $$
 \begin{equation*}
@@ -2021,6 +2033,8 @@ So we can write down the algorithm as:
 2. Initialize $\gamma_i$ coefficient. (For example $\gamma=0$)
 3. A loop until reach to a confidence limit needed:
 
+
+
 $$
 \begin{equation*}
 \gamma_{j, \textrm{next}} = \gamma_j - \frac{2\eta}{N}(\sum_{j=1}^N \gamma_j K(X_i, X_j)-y_j)\\
@@ -2041,6 +2055,8 @@ Which means that we only need to calculate $\langle X_i, X_j \rangle$ explicilty
 
 
 We can view this kernel function as how similar to vectors are, so basically when two instances are very similar we expect to get large values for the kernel and when they are not so similar we expect smaller values. If you think about the kernel as this, it is quite natural to define something close to a Gaussian function such as this:
+
+
 
 $$
 \begin{equation*}
@@ -2111,6 +2127,8 @@ y = h_{w, b}(x) = g(z) = g(w^T x + b)
 $$
 
 In which $g$ is defined as and $h_{w,b}$ is our hypothesis function:
+
+
 $$
 \begin{equation*}
 g(z) = \begin{cases} 1, & \mbox{if } z \geq 0 \\ -1, & \mbox{if } z < 0 \end{cases}
@@ -2121,6 +2139,7 @@ Now we should formalize our qualitative analysis of the closeness to the decisio
 
 ## Functional Margin:
 Imagine that we have a set of training examples $\{(X_j,y_j)\}$, we can define the functional margin of our hypothesis to be:
+
 
 $$
 \begin{equation*}
@@ -2136,10 +2155,12 @@ $$
 \end{equation*}
 $$
 
+
 So basically the worst functional margin among the training set.
 
 ## Geometric margin:
 We can use geometry to find a reasonable margin and that is to define the margin to be the distance from hyperplane of $S: w^T x + b = 0$ . From this definition the $\vec{w}$ is irtoghonal to the hyperplane and the distance is measure along this vector:
+
 
 $$
 \begin{equation*}
@@ -2148,6 +2169,8 @@ x_{o} = x_j - \zeta_j \frac{\vec{w}}{\|\vec{w}\|}
 $$
 
 In which $x_o \in S$ which means:
+
+
 $$
 \begin{equation*}
 w^T x_0 + b = 0 \\
@@ -2159,6 +2182,8 @@ $$
 
 
 And for a more general case of both positive and negative points we can define the geometrical margin to be:
+
+
 $$
 \begin{equation*}
 \zeta_j = (\frac{w^T x_j + b}{\|\vec{w}\|}) y_j
@@ -2168,16 +2193,19 @@ $$
 
 This is identical to our functional definition if we take $\|\vec{w}\|=1$. The definition of the margin for the training set is like the functional margin:
 
+
 $$
 \begin{equation*}
 \zeta = \min_{j=1,\dots,n} \zeta_j
 \end{equation*}
 $$
 
+
 We should try to maximize this $\zeta$ for having a hypothesis parameters that have higher confidence.
 
 
 Here we have to find the parameters which make $\zeta$ maximum:
+
 
 $$
 \begin{equation*}
@@ -2189,6 +2217,7 @@ $$
 
 We can turned this into another optimization problem:
 
+
 $$
 \begin{equation*}
 \max_{w,b} \frac{\zeta}{\|\vec{w}\|} \\
@@ -2198,6 +2227,7 @@ $$
 
 
 As we discussed the $(\vec{w}, b)$ are scalable without changing the results. So, we can conclude that $\zeta$ is scaled as a result. Therefore, we can force $\zeta = 1$.
+
 
 $$
 \begin{equation*}
@@ -2209,6 +2239,7 @@ $$
 Notice that none of the above objective function are not convex (In the case of the first one the constraint of $\|\vec{w}\| = 1$ is not convex); which means that our previous method for finding the optimized solution would not work.
 
 However, we can turn the maximization of $\frac{1}{\|\vec{w}\|}$ to minimization of $\|\vec{w}\|^2$, which is something that we have already know algorithm to optimize.
+
 
 $$
 \begin{equation*}
