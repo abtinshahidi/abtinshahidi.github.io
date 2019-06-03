@@ -54,13 +54,14 @@ Videos are accessible in the iLearn under section(002)
 [Lecture 4](https://abtinshahidi.github.io/files/lecture4.pdf)
 [Lecture 5](https://abtinshahidi.github.io/files/lecture5.pdf)
 [Lecture 6](https://abtinshahidi.github.io/files/lecture6.pdf)
+
 [Lecture 7](https://abtinshahidi.github.io/files/lecture7.pdf)
 [Lecture 8](https://abtinshahidi.github.io/files/lecture8.pptx)  
 [Lecture 9](https://abtinshahidi.github.io/files/lecture9.pdf)
-
 [Lecture 10](https://abtinshahidi.github.io/files/lecture10.pdf)
 [Lecture 11](https://abtinshahidi.github.io/files/lecture11.pdf)
 [Lecture 12](https://abtinshahidi.github.io/files/lecture12.pdf)
+
 [Lecture 13](https://abtinshahidi.github.io/files/lecture13.pdf)
 [Lecture 14](https://abtinshahidi.github.io/files/lecture14.pdf)
 [Lecture 15](https://abtinshahidi.github.io/files/lecture15.pdf)
