@@ -1,5 +1,5 @@
 ---
-title: "The foundation of applied machine learning"
+title: "The Foundation of Applied Machine Learning (Spring 2019)"
 collection: teaching
 type: "Online/in-Person Graduate course"
 permalink: /teaching/2019-spring-foundation-machine-learning
