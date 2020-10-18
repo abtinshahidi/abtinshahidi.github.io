@@ -1,7 +1,7 @@
 ---
 title: "Bridging between the Integrated and Resolved Main Sequence of Star Formation"
 collection: publications
-permalink: /publications/paper_1
+permalink: /publications/paper_4
 excerpt: ''
 date: 2020-01-06
 venue: 'Astrophysical Journal (ApJ)'

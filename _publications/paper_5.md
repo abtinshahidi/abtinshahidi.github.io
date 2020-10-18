@@ -1,7 +1,7 @@
 ---
 title: "Selection of Massive Evolved Galaxies at 3 ≤ z ≤ 4.5 in the CANDELS Fields"
 collection: publications
-permalink: /publications/paper_1
+permalink: /publications/paper_5
 excerpt: ''
 date: 2020-01-07
 venue: 'Astrophysical Journal (ApJ)'
