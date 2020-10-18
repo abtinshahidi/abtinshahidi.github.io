@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Physics, [Sharif University of Technology](http://www.en.sharif.edu/), Tehran, Iran 2015
-* M.S. in Physics and Astronomy, [University of California, Riverside](https://www.ucr.edu/), USA, 2016
 * Ph.D in Physics and Astronomy, [University of California, Riverside](https://www.ucr.edu/), USA, 2021-22 (expected)
+* M.S. in Physics and Astronomy, [University of California, Riverside](https://www.ucr.edu/), USA, 2016
+* B.S. in Physics, [Sharif University of Technology](http://www.en.sharif.edu/), Tehran, Iran 2015
 
 Work experience
 ======
