@@ -5,7 +5,7 @@ permalink: /publications/paper_4
 excerpt: ''
 date: 2020-01-06
 venue: 'Astrophysical Journal (ApJ)'
-paperurl: '[Export Citation](https://ui.adsabs.harvard.edu/abs/2020ApJ...896L..17H/exportcitation)'
+paperurl: 'https://ui.adsabs.harvard.edu/abs/2020ApJ...896L..17H/exportcitation'
 citation: 'Hemmati et al. 2020'
 ---
 
