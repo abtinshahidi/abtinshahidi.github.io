@@ -14,7 +14,9 @@ Using the Santa Cruz semi-analytical model of galaxy formation and evolution, an
 
 2. t-Student Stochastic Neighbors Embedding: [t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 
-3. Supervised Principal Component Analysis: [S-PCA][https://www.sciencedirect.com/science/article/abs/pii/S0031320310005819)
+3. Supervised Principal Component Analysis: [S-PCA](https://www.sciencedirect.com/science/article/abs/pii/S0031320310005819)
 
 
-For running an application for visualization of the training data, using different hyper-parameters [Click Here: "Training Embedding"](https://abtinshahidi.github.io/embedding_visualization/)
+For running an application for visualization of the training data, using different hyper-parameters:
+
+ [Click Here: "Training Embedding"](https://abtinshahidi.github.io/embedding_visualization/)
