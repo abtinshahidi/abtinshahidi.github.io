@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className="js";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visualizations — Abtin Shahidi</title>
+<meta name="description" content="Scientific data visualizations by Abtin Shahidi: embeddings, posteriors, point processes, galaxy selection, and an interactive dimensionality-reduction app.">
+<meta name="author" content="Abtin Shahidi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Visualizations — Abtin Shahidi">
+<meta property="og:description" content="Scientific data visualizations by Abtin Shahidi: embeddings, posteriors, point processes, galaxy selection, and an interactive dimensionality-reduction app.">
+<meta property="og:image" content="https://abtinshahidi.github.io/assets/viz/og-image.png">
+<meta property="og:url" content="https://abtinshahidi.github.io/visualizations/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/Fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="/" aria-label="Abtin Shahidi — home">
+      <img class="brand__mark" src="/assets/favicon.svg" alt="" width="30" height="30">
+      <span><span class="brand__name">Abtin Shahidi</span>
+      <span class="brand__tag">Astrophysics · Data Science</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+      <li><a href="/research/">Research</a></li>
+      <li><a href="/industry/">Industry</a></li>
+      <li><a href="/publications/">Publications</a></li>
+      <li><a href="/visualizations/" aria-current="page">Visualizations</a></li>
+      <li><a href="/teaching/">Teaching</a></li>
+      <li><a href="/cv/">CV</a></li>
+      </ul>
+    </nav>
+    <a class="nav__cta" href="/files/Abtin_Shahidi_CV.pdf">Download CV</a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="phead"><div class="wrap">
+  <span class="eyebrow eyebrow--cyan">Visualizations</span>
+  <h1>Making structure<br>visible.</h1>
+  <p class="lead">Good statistical work is only half the job &mdash; the other half is making the
+  model and the data legible. These are figures from my research, my industry work, and the
+  machine-learning course I taught.</p>
+</div></section>
+
+<section class="section" style="padding-top:2rem"><div class="wrap-wide">
+  <a class="viz viz--feature viz--paper reveal" href="https://abtinshahidi.github.io/embedding_visualization/"
+     style="display:block;grid-column:1/-1;text-decoration:none">
+    <div class="viz__img viz--feature" style="aspect-ratio:21/9"><img src="/assets/viz/umap3d_teaser.png" alt="Interactive color-space embedding explorer"></div>
+    <div class="viz__body" style="display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap">
+      <div><span class="viz__kicker">Interactive · live app</span>
+        <h3 class="viz__title" style="font-size:1.5rem">Color-space embedding explorer</h3>
+        <p class="viz__desc">Explore UMAP, t-SNE and supervised-PCA embeddings of the semi-analytic
+        color catalogs, sweeping the hyper-parameters yourself &mdash; the interactive companion to
+        the 3D projection on the research page.</p></div>
+      <span class="btn btn--primary btn--sm">Open the app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6"/></svg></span>
+    </div>
+  </a>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="wrap-wide">
+  <div class="section-head reveal"><span class="eyebrow">Gallery</span>
+    <h2>Models &amp; data, rendered.</h2></div>
+  <div class="gallery">
+    <article class="viz reveal viz--wide viz--paper">
+      <div class="viz__img"><img src="/assets/viz/sfr_mass.png" alt="Star-forming main sequence"></div>
+      <div class="viz__body"><span class="viz__kicker">Astrophysics</span>
+      <h3 class="viz__title">Star-forming main sequence</h3>
+      <p class="viz__desc">SFR vs. stellar mass in bins of redshift, with points colored by their posterior probability of being star-forming, star-burst, or quiescent — the three-component mixture the model fits jointly.</p></div>
+    </article>
+    <article class="viz reveal viz--paper">
+      <div class="viz__img"><img src="/assets/viz/comparison.png" alt="Color–color selection"></div>
+      <div class="viz__body"><span class="viz__kicker">Galaxy selection</span>
+      <h3 class="viz__title">Color–color selection</h3>
+      <p class="viz__desc">Specific SFR and rest-frame colors used to isolate massive, evolved galaxies at 3 ≤ z ≤ 4.5, with candidates shaded by the likelihood each selection method assigns.</p></div>
+    </article>
+    <article class="viz reveal">
+      <div class="viz__img"><img src="/assets/viz/gibbs.png" alt="Posterior from a Gibbs sampler"></div>
+      <div class="viz__body"><span class="viz__kicker">Bayesian inference</span>
+      <h3 class="viz__title">Posterior from a Gibbs sampler</h3>
+      <p class="viz__desc">A bimodal posterior density estimated non-parametrically, with the Gibbs chains that explored it — the engine behind the demographic-imputation work.</p></div>
+    </article>
+    <article class="viz reveal viz--wide">
+      <div class="viz__img"><img src="/assets/viz/poisson.png" alt="Non-homogeneous Poisson process"></div>
+      <div class="viz__body"><span class="viz__kicker">Point processes</span>
+      <h3 class="viz__title">Non-homogeneous Poisson process</h3>
+      <p class="viz__desc">Time-varying viewing intensity for several households, with the underlying event ticks. This is how purchase and TV-viewership behavior gets modeled.</p></div>
+    </article>
+    <article class="viz reveal">
+      <div class="viz__img"><img src="/assets/viz/identity_graph.png" alt="Identity graph"></div>
+      <div class="viz__body"><span class="viz__kicker">Industry</span>
+      <h3 class="viz__title">Identity graph</h3>
+      <p class="viz__desc">Devices, resolved identities, and demographics as an evolving bipartite graph — the structure behind large-scale identity resolution.</p></div>
+    </article>
+  </div>
+  <div class="panel reveal" style="margin-top:2.4rem">
+    <span class="eyebrow eyebrow--cyan">More</span>
+    <h3 style="margin:.6rem 0 .6rem">The full set of research figures lives on the research page</h3>
+    <p style="color:var(--dim);margin:0 0 1.1rem">Stellar mass functions, quenching efficiency, and the
+    quiescent-probability surfaces from the hierarchical Bayesian model are shown in context there
+    &mdash; and dozens more worked plots live in the course notebooks.</p>
+    <div class="hero__cta">
+      <a class="btn btn--ghost btn--sm" href="/research/">See the research figures <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></a>
+      <a class="btn btn--ghost btn--sm" href="/teaching/">Browse the notebooks <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></a>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__big">Building models that make massive, messy data legible.
+        <a href="mailto:abtin1shahidi@gmail.com">Let's talk &rarr;</a></p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/industry/">Industry</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/visualizations/">Visualizations</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/cv/">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="mailto:abtin1shahidi@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a></li>
+          <li><a href="https://github.com/abtinshahidi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.85 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.22-3.37-1.22-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0C17.3 5.6 18.14 5.88 18.14 5.88c.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg> GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/abtin-shahidi-7a6301a4"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18.34V10.4H5.67v7.94h2.67zM7 9.24a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zm11.34 9.1v-4.36c0-2.33-1.25-3.42-2.91-3.42-1.34 0-1.94.74-2.27 1.26v-1.08H10.5v7.94h2.66v-4.43c0-.23.02-.47.09-.63.18-.47.61-.95 1.32-.95.94 0 1.31.71 1.31 1.75v4.26h2.46z"/></svg> LinkedIn</a></li>
+          <li><a href="https://orcid.org/0000-0001-6975-6293"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8.06 7.3a.86.86 0 11-.01-1.72.86.86 0 01.01 1.72zM7.3 8.6h1.5v8.1H7.3V8.6zm3 0h3.1c2.95 0 4.25 2.11 4.25 4.05 0 2.11-1.65 4.05-4.24 4.05H10.3V8.6zm1.5 1.36v5.38h1.5c2.13 0 2.62-1.62 2.62-2.69 0-1.74-1.11-2.69-2.67-2.69h-1.45z"/></svg> ORCID</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>&copy; 2026 Abtin Shahidi</span>
+      <span>Riverside, California &middot; Rendered as a deep-field catalog</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>

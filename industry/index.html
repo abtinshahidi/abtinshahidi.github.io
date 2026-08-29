@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className="js";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Industry — Abtin Shahidi</title>
+<meta name="description" content="Senior Data Scientist at VideoAmp (2021–2024): Bayesian demographic imputation, a billion-edge identity graph, point-process behavioral modeling, and survey-based lift measurement.">
+<meta name="author" content="Abtin Shahidi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Industry — Abtin Shahidi">
+<meta property="og:description" content="Senior Data Scientist at VideoAmp (2021–2024): Bayesian demographic imputation, a billion-edge identity graph, point-process behavioral modeling, and survey-based lift measurement.">
+<meta property="og:image" content="https://abtinshahidi.github.io/assets/viz/og-image.png">
+<meta property="og:url" content="https://abtinshahidi.github.io/industry/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/Fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="/" aria-label="Abtin Shahidi — home">
+      <img class="brand__mark" src="/assets/favicon.svg" alt="" width="30" height="30">
+      <span><span class="brand__name">Abtin Shahidi</span>
+      <span class="brand__tag">Astrophysics · Data Science</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+      <li><a href="/research/">Research</a></li>
+      <li><a href="/industry/" aria-current="page">Industry</a></li>
+      <li><a href="/publications/">Publications</a></li>
+      <li><a href="/visualizations/">Visualizations</a></li>
+      <li><a href="/teaching/">Teaching</a></li>
+      <li><a href="/cv/">CV</a></li>
+      </ul>
+    </nav>
+    <a class="nav__cta" href="/files/Abtin_Shahidi_CV.pdf">Download CV</a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="phead"><div class="wrap">
+  <span class="eyebrow eyebrow--cyan">Industry</span>
+  <h1>Senior Data Scientist<br>at VideoAmp.</h1>
+  <p class="lead">From 2021 to 2024 I worked on measurement and identity for cross-screen
+  advertising &mdash; the statistics of knowing <em>who</em> saw <em>what</em>, and what it did,
+  when your data is enormous, fragmented, and incomplete.</p>
+  <div class="hero__meta" style="margin-top:1.6rem">
+    <span><i></i>2021&ndash;2024</span><span><i></i>Los Angeles, CA</span>
+    <span><i></i>TV &amp; digital measurement</span>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:2rem"><div class="wrap-wide">
+  <div class="section-head reveal"><span class="eyebrow">Four projects</span>
+    <h2>Bayesian modeling, at industrial scale.</h2>
+    <p>Each of these took a research-grade statistical method and made it run reliably over
+    hundreds of millions of records in production.</p></div>
+  <div class="split">
+    <article class="method reveal">
+      <span class="method__tag">Bayesian imputation</span>
+      <h3 class="method__title">Demographic imputation across 120M U.S. households</h3>
+      <p class="method__stat mono">120M households &middot; 10M points &middot; ~1M params</p>
+      <p>Designed and implemented a Gibbs sampler for Bayesian non-parametric density estimation to fill missing demographics in a deeply nested household structure &mdash; tuned to run over 10 million data points and roughly a million parameters.</p>
+      <div style="margin-top:1.3rem;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#05070f"><img src="/assets/viz/gibbs.png" alt="Demographic imputation across 120M U.S. households" style="width:100%;display:block"></div>
+    </article>
+    <article class="method reveal">
+      <span class="method__tag">Graph modeling</span>
+      <h3 class="method__title">Identity graph construction</h3>
+      <p class="method__stat mono">100M nodes &middot; 1B edges</p>
+      <p>Built a probabilistic framework for the evolution of interconnected bipartite graphs, linking devices, identities and demographics from multiple sources over time, with an emphasis on geographical consistency.</p>
+      <div style="margin-top:1.3rem;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#05070f"><img src="/assets/viz/identity_graph.png" alt="Identity graph construction" style="width:100%;display:block"></div>
+    </article>
+    <article class="method reveal">
+      <span class="method__tag">Point processes</span>
+      <h3 class="method__title">Behavioral modeling</h3>
+      <p class="method__stat mono">100K+ time series &middot; zero-inflated &middot; autoregressive</p>
+      <p>Modeled purchase and TV-viewership as household-level Poisson point processes, separating the true event-generating rate from selection and masking effects with a zero-inflated, hierarchical model that shares information across households. Covariate link functions and autoregression let each household's intensity depend on its attributes, on time, and on its own recent history &mdash; across 100,000+ time series.</p>
+      <div style="margin-top:1.3rem;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#05070f"><img src="/assets/viz/poisson.png" alt="Behavioral modeling" style="width:100%;display:block"></div>
+    </article>
+    <article class="method reveal">
+      <span class="method__tag">Measurement</span>
+      <h3 class="method__title">Survey-based lift methodology</h3>
+      <p class="method__stat mono">N(X,Y) = N&#8347;(X,Y) / p(S=1 | X,Y)</p>
+      <p>Built a projection framework for unbiased measurement of household&ndash;event pairs under incomplete observation. From an exchangeability argument it recovers any population quantity by dividing the observed count by its probability of being observed &mdash; inverse-probability weights set by identity-graph matchability and observability &mdash; while estimating the total universe intensity jointly. It turns a biased, partially observed panel into calibrated, unbiased ad-effectiveness estimates.</p>
+      
+    </article>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="wrap-wide">
+  <div class="panel reveal">
+    <span class="eyebrow eyebrow--cyan">Stack</span>
+    <h3 style="margin:.6rem 0 1rem">Tools I reached for</h3>
+    <div class="pill-row">
+      <span class="pill">Python</span><span class="pill">PySpark · Spark</span><span class="pill">SQL</span>
+      <span class="pill">Stan · PyStan</span><span class="pill">PyMC</span><span class="pill">prophet</span>
+      <span class="pill">NumPy · SciPy · Pandas</span><span class="pill">scikit-learn</span>
+      <span class="pill">Gibbs sampling · MCMC</span><span class="pill">Hierarchical Bayes</span>
+      <span class="pill">Poisson point processes</span><span class="pill">GNU/Linux</span>
+    </div>
+  </div>
+  <div style="margin-top:2.4rem" class="reveal">
+    <a class="btn btn--primary" href="/files/Abtin_Shahidi_CV.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg> Download full CV</a>
+    <a class="btn btn--ghost" href="/research/">See the research side</a>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__big">Building models that make massive, messy data legible.
+        <a href="mailto:abtin1shahidi@gmail.com">Let's talk &rarr;</a></p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/industry/">Industry</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/visualizations/">Visualizations</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/cv/">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="mailto:abtin1shahidi@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a></li>
+          <li><a href="https://github.com/abtinshahidi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.85 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.22-3.37-1.22-.46-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0C17.3 5.6 18.14 5.88 18.14 5.88c.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg> GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/abtin-shahidi-7a6301a4"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18.34V10.4H5.67v7.94h2.67zM7 9.24a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zm11.34 9.1v-4.36c0-2.33-1.25-3.42-2.91-3.42-1.34 0-1.94.74-2.27 1.26v-1.08H10.5v7.94h2.66v-4.43c0-.23.02-.47.09-.63.18-.47.61-.95 1.32-.95.94 0 1.31.71 1.31 1.75v4.26h2.46z"/></svg> LinkedIn</a></li>
+          <li><a href="https://orcid.org/0000-0001-6975-6293"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM8.06 7.3a.86.86 0 11-.01-1.72.86.86 0 01.01 1.72zM7.3 8.6h1.5v8.1H7.3V8.6zm3 0h3.1c2.95 0 4.25 2.11 4.25 4.05 0 2.11-1.65 4.05-4.24 4.05H10.3V8.6zm1.5 1.36v5.38h1.5c2.13 0 2.62-1.62 2.62-2.69 0-1.74-1.11-2.69-2.67-2.69h-1.45z"/></svg> ORCID</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>&copy; 2026 Abtin Shahidi</span>
+      <span>Riverside, California &middot; Rendered as a deep-field catalog</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>
