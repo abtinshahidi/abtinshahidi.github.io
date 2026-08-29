@@ -430,6 +430,7 @@ html.js .reveal:not(.in){opacity:0;transform:translateY(22px);}
   padding:clamp(.7rem,1.6vw,1.2rem);}
 .plate__fig img{width:100%;height:auto;display:block;border-radius:4px;}
 .plate--tall .plate__fig img{width:auto;max-width:100%;max-height:640px;margin-inline:auto;}
+.plate__fig video{width:100%;height:auto;display:block;border-radius:4px;background:#fff;}
 .plate__cap{padding:1.1rem 1.35rem 1.35rem;}
 .plate__cap .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;
   text-transform:uppercase;color:var(--cyan);}
