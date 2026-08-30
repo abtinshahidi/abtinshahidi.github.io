@@ -68,7 +68,7 @@
     <p>I built a single probabilistic model for the star-forming sequence that fits three galaxy
     types at once &mdash; star-forming, star-burst, and transitioning/quiescent &mdash; as a mixture
     on the SFR&ndash;mass plane, and simultaneously infers the probability that a galaxy is quiescent
-    as a function of its stellar mass and local environment. Stellar-mass uncertainties, censored
+    as a function of its stellar mass and local environment. Stellar-mass and SFR uncertainties, censored
     SFRs, and the stellar mass function are all modeled together, with inference in
     <span class="mono" style="color:var(--cyan)">Stan</span> by Hamiltonian Monte Carlo.</p></div>
 
@@ -138,10 +138,16 @@
 <section class="section" style="padding-top:0"><div class="wrap-wide">
   <div class="section-head reveal"><span class="eyebrow eyebrow--cyan">Thread II &middot; Selection</span>
     <h2>Finding massive evolved galaxies at 3 &le; z &le; 4.5.</h2>
-    <p>My first-author work builds a complete, statistically characterized sample of massive,
-    already-evolved galaxies in the early universe &mdash; rare objects easily confused with dusty
-    star-formers. It combines rest-frame color selections with machine-learning on the full
-    multiwavelength catalog, assigning each candidate a likelihood rather than a hard yes/no.</p></div>
+    <p>My first-author work builds a complete, statistically characterized sample of massive, 
+      already-evolved galaxies in the early universe &mdash; rare objects that can easily be 
+      confused with dusty star-forming galaxies. It combines color-selection methods, using 
+      both rest-frame and observed-frame colors, with Bayesian SED fitting across the full 
+      multiwavelength catalog, assigning each candidate a likelihood rather than a hard yes/no 
+      classification. In a follow-up project, I demonstrate how machine-learning and 
+      manifold-learning techniques can make the selection more robust, using semi-analytic model 
+      simulated catalogs for training, testing, and validation. These simulations are designed 
+      to mimic real observations both physically and statistically, including measurement 
+      uncertainties and missing data.</p></div>
   <div class="plate reveal" style="margin-bottom:clamp(1rem,2vw,1.6rem)">
     <div class="plate__fig">
       <video src="/assets/viz/quiescent_galaxy.mp4" poster="/assets/viz/quiescent_galaxy_poster.jpg"
